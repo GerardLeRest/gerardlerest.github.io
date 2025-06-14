@@ -1,0 +1,22 @@
+/* Style principal de Charpy */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+h1 {
+    color: #1F4E79; /* Bleu acier – sérieux et technique */
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #444444; /* Gris anthracite – hiérarchie claire */
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+

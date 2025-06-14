@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-<<style>
+<style>
   .orange-doux {
     color: #E67E22;
     font-weight: bold;

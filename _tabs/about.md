@@ -4,10 +4,14 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-> {: .prompt-tip }
+<<style>
+  .orange-doux {
+    color: #E67E22;
+    font-weight: bold;
+  }
+</style>
 
-## Bienvenue !
+## <span class="orange-doux">Bienvenue !</span>
 
 Je m'appelle Gérard Le Rest. Je suis développeur, auteur, et passionné par la création au sens large : code, écriture, pédagogie, GNU/Linux...
 
@@ -16,7 +20,7 @@ Ce site est un espace de partage autour de mes projets techniques.
 
 ---
 
-## Mon parcours en bref
+## <span class="orange-doux">Mon parcours en bref</span>
 
 - Ancien enseignant en électrotechnique, électronique et physique appliquée pendant 25 ans.
 - Reconversion vers le développement web, mobile et desktop.
@@ -25,7 +29,7 @@ Ce site est un espace de partage autour de mes projets techniques.
 
 ---
 
-## Projets récents
+## <span class="orange-doux">Projets récents</span>
 
 - **VisuMemo** : outil Python pour apprendre les prénoms et noms d’élèves, ou ceux de personnels
 - **SoigneMoi** : suite logicielle santé (web, mobile, desktop)
@@ -35,7 +39,7 @@ Ce site est un espace de partage autour de mes projets techniques.
 
 ---
 
-## Me contacter
+## <span class="orange-doux">Me contacter</span>
 
 📧 [gerard.lerest@orange.fr](mailto:gerard.lerest@orange.fr)  
 💻 [Mon GitHub](https://github.com/GerardLeRest)

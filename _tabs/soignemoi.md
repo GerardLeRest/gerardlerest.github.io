@@ -1,15 +1,16 @@
 ---
 # the default layout is 'page'
-title: Proejt SoigneMoi
+title: Projet SoigneMoi
 icon: fas fa-wrench
 order: 5
 ---
 
-Ce projet est celui que j'ai réalisé à la fin de mon année de Bachelor CDA (Concepteur Développeur d'Applications).
+Ce projet est celui que j’ai réalisé à la fin de mon année de bachelor CDA (Concepteur Développeur d’Applications).
 
 Le projet est composé de trois éléments :
-- un site web qui permet l’interaction entre les patients et les soignants,
-- un logiciel bureautique destiné au secrétariat,
+
+- un site web qui permet l’interaction entre les patients et les soignants ;
+- un logiciel bureautique destiné au secrétariat ;
 - une application mobile pour les médecins.
 
 # 1. Le site web
@@ -20,13 +21,13 @@ Le site est couplé à une base de données.
 
 **Technologies utilisées :** Slim, Symfony, PHP, Twig, HTML.
 
-J’ai commencé par utiliser Slim. J’ai dû construire le site brique par brique, ce qui m’a permis de bien comprendre la structure d’un framework.
+J’ai commencé par utiliser Slim. J’ai dû construire le site brique après brique, ce qui m’a permis de bien comprendre la structure d’un framework.
 
-Puis, après l’examen, j’ai souhaité remplacer Slim par Symfony. Cela m’a permis d’aller au bout du projet, en y intégrant une gestion des rôles. Symfony est tout de même plus pragmatique.
+Puis, après l’examen, j’ai souhaité remplacer Slim par Symfony. Cela m’a permis d’aller au bout du projet en y intégrant une gestion des rôles. Symfony est tout de même plus pragmatique.
 
 J’ai choisi d’utiliser un template Bootstrap pour soigner le rendu du site. Dans les trois premières pages, je me suis contenté de modifier le texte. Pour les quatre dernières, j’ai adapté le site **Medilab** à mon projet.
 
-Les différents formulaires sont connectés à une base de données MySQL, où les données sont sauvegardées.
+Les différents formulaires sont connectés à une base de données MySQL, où les données sont enregistrées.
 
 ## Un peu de code
 
@@ -34,34 +35,41 @@ La méthode suivante permet à la secrétaire de récupérer les informations de
 
 ```php
 // Sorties
-    #[Route('/sorties', name: 'app_sorties_secretariat', methods: ['GET'])]
-    //Transmission des données des patients sortant le jour même
-        public function donneesSorties (Request $request) : Response
-    {
-        try{
-            $qb = $this->emi->createQueryBuilder();
-            $qb->select('p.id', 'p.prenom', 'p.nom', 'p.adressePostale')
-               ->from(Sejour::class, 's')
-               ->join('s.patient', 'p')
-               ->Where('s.dateFin = CURRENT_DATE()');
-            $query = $qb->getQuery();
-            $this->donnees = $query->getResult();
-            return $this->json($this->donnees);
-        } catch(Exception $e){
-            return new JsonResponse(["Erreur" => $e->getMessage()]);
-        }
+// Transmission des données des patients qui sortent le jour même
+#[Route('/sorties', name: 'app_sorties_secretariat', methods: ['GET'])]
+public function donneesSorties(Request $request): Response
+{
+    try {
+        $qb = $this->emi->createQueryBuilder();
+        $qb->select('p.id', 'p.prenom', 'p.nom', 'p.adressePostale')
+           ->from(Sejour::class, 's')
+           ->join('s.patient', 'p')
+           ->where('s.dateFin = CURRENT_DATE()');
+        $query = $qb->getQuery();
+        $this->donnees = $query->getResult();
+        return $this->json($this->donnees);
+    } catch (Exception $e) {
+        return new JsonResponse(["Erreur" => $e->getMessage()]);
     }
+}
 ```
-## Technologie
-- php
-- html
-- twig
-- css
-- Frameworks: Slim puis Symfony
 
-## Page d'accueil 
+## Technologies
+
+PHP
+
+HTML
+
+Twig
+
+CSS
+
+Frameworks : Slim puis Symfony
+
+## Page d’accueil
 
 ![Site web](assets/img/site_web.png)
 
-  
-# 2.  l'applicaion "Secretariat
+# 2. L'application bureautique « Secrétariat »
+
+

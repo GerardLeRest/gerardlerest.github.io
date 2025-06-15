@@ -1,6 +1,9 @@
 ---
 ---
 
+/* fichier : assets/css/style.scss */
+@import "main"; // garde cette ligne en haut !
+
 /* Style principal de Charpy */
 
 h1 {
@@ -12,6 +15,6 @@ h2 {
 }
 
 p {
-	color: red;
+	color: red; 
 }	
 

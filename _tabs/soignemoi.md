@@ -12,6 +12,7 @@ Le projet est composé de trois éléments :
 - un site web qui permet l’interaction entre les patients et les soignants ;
 - un logiciel bureautique destiné au secrétariat ;
 - une application mobile pour les médecins.
+![logo](assets/img/logo.png)
 
 # 1. Le site web 
 
@@ -86,7 +87,7 @@ def identite(self) -> None:
         details.exec()
 ```
 ## technologie
-python, json, pyside6, pillow, traitement fichiers
+python, json, pyside6, pillow, traitement de fichiers
 
 ## vue des interfaces
 ![Secretariat](assets/img/secretariat.png)

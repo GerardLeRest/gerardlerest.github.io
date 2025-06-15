@@ -13,9 +13,9 @@ Le projet est composé de trois éléments :
 - un logiciel bureautique destiné au secrétariat ;
 - une application mobile pour les médecins.
 
-# <span class="couleur_h1"> 1. Le site web </span>
+<h1 class="couleur_h1"> 1. Le site web </h1>
 
-## <span class ="coulur_h2"> Présentation </span>
+<h2 class="couleur_h2"> Présentation </h2> 
 
 Le site est couplé à une base de données.
 
@@ -27,7 +27,7 @@ J’ai choisi d’utiliser un template Bootstrap pour soigner le rendu du site. 
 
 Les différents formulaires sont connectés à une base de données MySQL, où les données sont enregistrées.
 
-# <span class ="coulur_h2">Un peu de code </span>
+# Un peu de code
 
 La méthode suivante permet à la secrétaire de récupérer les informations des patients sortants :
 
@@ -51,16 +51,14 @@ public function donneesSorties(Request $request): Response
     }
 }
 ```
-## <span class ="couleur_h2"> Technologies </span> 
+## Technologies 
 
 Lanages: PHP, HTML, Twig, CSS
 
 Frameworks : Slim, Symfony
 
-## <span class ="couleur_h2"> Page d’accueil </span> 
+## Page d’accueil 
 
 ![Site web](assets/img/site_web.png)
 
-# <span class="couleur_h1"> 2. L'application bureautique « Secrétariat »</span>
-
-
+# 2. L'application bureautique « Secrétariat »

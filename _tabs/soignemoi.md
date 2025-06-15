@@ -13,9 +13,9 @@ Le projet est composé de trois éléments :
 - un logiciel bureautique destiné au secrétariat ;
 - une application mobile pour les médecins.
 
-<h1 class="couleur_h1"> 1. Le site web </h1>
+# 1. Le site web 
 
-<h2 class="couleur_h2"> Présentation </h2> 
+## Présentation  
 
 Le site est couplé à une base de données.
 
@@ -27,7 +27,7 @@ J’ai choisi d’utiliser un template Bootstrap pour soigner le rendu du site. 
 
 Les différents formulaires sont connectés à une base de données MySQL, où les données sont enregistrées.
 
-# Un peu de code
+## Un peu de code
 
 La méthode suivante permet à la secrétaire de récupérer les informations des patients sortants :
 
@@ -61,4 +61,32 @@ Frameworks : Slim, Symfony
 
 ![Site web](assets/img/site_web.png)
 
-# 2. L'application bureautique « Secrétariat »
+# 2. L'application « Secrétariat »
+## Présentation
+Cette application permet aux secrétaires d'obtenir des informations sue les patients entrants ou sortants. Les identités s'affichent dans des fenêtres. Pour avoir des informations plus détaillées, il suffit de cliquer sur la ligne du patient.
+## Un peu de code
+Cette application permet aux secrétaires d'obtenir des informations sur les patients entrants ou sortants. Les identités s'affichent dans des fenêtres. Pour avoir des informations plus détaillées, il suffit de cliquer sur la ligne du patient.
+```python
+def identite(self) -> None:
+        """Appelée quand l'utilisateur sélectionne une ligne"""
+        selected_items = self.table.selectedItems()
+        if not selected_items or len(selected_items) < 3:
+            return
+
+        id_text = selected_items[0].text().strip()
+        id = int(id_text)
+        print("ID sélectionné :", id)
+        prenom = selected_items[1].text()
+        nom = selected_items[2].text()
+        identite = f"{prenom} {nom}"
+       
+        details = AffichageDetails(identite, id) #None : séparer la fenêtre d'application et cette fenêtre détails
+        details.setWindowFlag(Qt.Window)  # Pour une vraie fenêtre indépendante
+        details.show()
+        details.exec()
+```
+## technologie
+python, json, pyside6, pillow, traitement fichiers
+
+## vue des interfaces
+![Secretariat](assets/img/secretariat.png)

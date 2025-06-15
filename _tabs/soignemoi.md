@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-icon: fas fa-rectangle-history-circle-user
+icon: wrench
 order: 5
 ---
 # Projet - SoigneMoi
@@ -59,9 +59,17 @@ La méthode suivante permet à la secrétaire de récupérer les informations de
             return new JsonResponse(["Erreur" => $e->getMessage()]);
         }
     }
-    ```
-    
-    <img src="assets/img/site-web.png" alt="Site-web" style="max-width:300px;">
+```
+## Technologie
+- php
+- html
+- twig
+- css
+- Frameworks: Slim puis Symfony
 
+## Page d'accueil 
 
+![Site web](assets/img/site_web.png)
+
+  
 # 2.  l'applicaion "Secretariat

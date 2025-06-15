@@ -1,3 +1,8 @@
+---
+# the default layout is 'page'
+icon: fas fa-rectangle-history-circle-user
+order: 5
+---
 # Projet - SoigneMoi
 
 Ce projet est celui que j'ai réakisé à la fin de mon année de bachelor CDA (Concepteur Développeur d'Applications).

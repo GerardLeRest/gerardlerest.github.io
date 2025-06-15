@@ -1,17 +1,9 @@
 ---
 # the default layout is 'page'
-icon: wrench
+title: Proejt SoigneMoi
+icon: fas fa-wrench
 order: 5
 ---
-# Projet - SoigneMoi
-
-Ce projet est celui que j'ai réakisé à la fin de mon année de bachelor CDA (Concepteur Développeur d'Applications).
-Le projet est composée de trois élémnts:
-- un site web intérragi avec les patients et les soignants
-- un logiciel bureautique pour les secrétaiat
-- une appplication mobile pour les médecins
-
-# Projet - SoigneMoi
 
 Ce projet est celui que j'ai réalisé à la fin de mon année de Bachelor CDA (Concepteur Développeur d'Applications).
 

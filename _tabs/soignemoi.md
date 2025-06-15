@@ -11,8 +11,10 @@ Le projet est composé de trois éléments :
 
 - un site web qui permet l’interaction entre les patients et les soignants ;
 - un logiciel bureautique destiné au secrétariat ;
-- une application mobile pour les médecins.<br>
-![logo](assets/img/logo.png)
+- une application mobile pour les médecins.
+<p align="center">
+  <img src="assets/img/hopital.png" alt="logo" />
+</p>
 
 # 1. Le site web 
 

@@ -11,7 +11,7 @@ Le projet est composé de trois éléments :
 
 - un site web qui permet l’interaction entre les patients et les soignants ;
 - un logiciel bureautique destiné au secrétariat ;
-- une application mobile pour les médecins.
+- une application mobile pour les médecins.<br>
 ![logo](assets/img/logo.png)
 
 # 1. Le site web 
@@ -76,7 +76,6 @@ def identite(self) -> None:
 
         id_text = selected_items[0].text().strip()
         id = int(id_text)
-        print("ID sélectionné :", id)
         prenom = selected_items[1].text()
         nom = selected_items[2].text()
         identite = f"{prenom} {nom}"

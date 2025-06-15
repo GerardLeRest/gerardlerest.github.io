@@ -13,13 +13,11 @@ Le projet est composé de trois éléments :
 - un logiciel bureautique destiné au secrétariat ;
 - une application mobile pour les médecins.
 
-# 1. Le site web
+# <span class="couleur_h1"> 1. Le site web </span>
 
-## Présentation
+## <span class ="coulur_h2"> Présentation </span>
 
 Le site est couplé à une base de données.
-
-**Technologies utilisées :** Slim, Symfony, PHP, Twig, HTML.
 
 J’ai commencé par utiliser Slim. J’ai dû construire le site brique après brique, ce qui m’a permis de bien comprendre la structure d’un framework.
 
@@ -29,7 +27,7 @@ J’ai choisi d’utiliser un template Bootstrap pour soigner le rendu du site. 
 
 Les différents formulaires sont connectés à une base de données MySQL, où les données sont enregistrées.
 
-## Un peu de code
+# <span class ="coulur_h2">Un peu de code </span>
 
 La méthode suivante permet à la secrétaire de récupérer les informations des patients sortants :
 
@@ -53,23 +51,16 @@ public function donneesSorties(Request $request): Response
     }
 }
 ```
+## <span class ="couleur_h2"> Technologies </span> 
 
-## Technologies
+Lanages: PHP, HTML, Twig, CSS
 
-PHP
+Frameworks : Slim, Symfony
 
-HTML
-
-Twig
-
-CSS
-
-Frameworks : Slim puis Symfony
-
-## Page d’accueil
+## <span class ="couleur_h2"> Page d’accueil </span> 
 
 ![Site web](assets/img/site_web.png)
 
-# 2. L'application bureautique « Secrétariat »
+# <span class="couleur_h1"> 2. L'application bureautique « Secrétariat »</span>
 
 

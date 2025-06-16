@@ -6,7 +6,6 @@ icon: fas fa-wrench
 order: 6
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
 
 github: [Github - VisuMemo](https://github.com/GerardLeRest/VisuMemo)
 

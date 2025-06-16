@@ -7,7 +7,7 @@ order: 5
 
 ---
 
-<link rel="stylesheet" href="/assets/css/style.css">
+
 
 github: [Github - Soignemoi](https://github.com/GerardLeRest/soignemoi-symfony)
 

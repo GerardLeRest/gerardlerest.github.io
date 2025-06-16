@@ -1,2 +1,5 @@
 cd ~/Bureau/gerardlerest.github.io || exit
 bundle exec jekyll serve --livereload
+
+css en local:
+<link rel="stylesheet" href="/assets/css/style.css">

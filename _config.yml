@@ -14,9 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Les 3C # the main title
+title: Créativités informatiques # the main title
 
-tagline: Code, Créativité, Curiosité # it will display as the subtitle
+tagline: L’imagination au service de l’informatique # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.

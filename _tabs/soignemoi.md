@@ -7,9 +7,8 @@ order: 5
 
 ---
 
-
-
-github: [Github - Soignemoi](https://github.com/GerardLeRest/soignemoi-symfony)
+github: [Soignemoi-Symfony](https://github.com/GerardLeRest/soignemoi-symfony) <br>
+site internet: [soignemoi.net](https://www.soignemoi.net)
 
 Ce projet est celui que j’ai réalisé à la fin de mon année de bachelor CDA (Concepteur Développeur d’Applications).
 
@@ -19,13 +18,13 @@ Le projet est composé de trois applications :
 
 - un logiciel bureautique destiné au secrétariat ;
 
-- une application mobile pour les médecins. *
-  
-  ![chirugien](assets/img/chirurgiens.png)
+- une application mobile pour les médecins. 
 
-# 1. Le site web
+![chirugien](assets/img/chirurgiens.png)
 
-## Présentation
+## 1. Le site internet "SoigneMoi"
+
+### Présentation
 
 Le site est couplé à une base de données MySQL.
 
@@ -37,7 +36,7 @@ J’ai choisi d’utiliser un template Bootstrap pour soigner le rendu du site. 
 
 Les différents formulaires sont connectés à une base de données MySQL, où les données sont enregistrées.
 
-## Un peu de code
+### Un peu de code
 
 La méthode suivante permet à la secrétaire de récupérer les informations des patients sortants :
 
@@ -62,30 +61,28 @@ public function donneesSorties(Request $request): Response
 }
 ```
 
-## Technologies
+### Technologies
 
 Langages: PHP, HTML, Twig, CSS, MySQL
 
 Frameworks : Slim, Symfony
 
-* Illustration de l'image des chirugiens: Yamu_Jay - Pixabay
-
-## Page d’accueil
+### Page d’accueil
 
 ![Site web](assets/img/site_web.png)
 
-## Conclusion
+### Conclusion
 
 les deux framework ont eu leur fonction, le premier (Slim) pour comprendre la construction d'un framework, le deuxième m'a montré un outil plus simple. Dans ma première version, je ne suis pas arrivé à gérer les notions de rôles, ce que Symfony m'a permis de le faire.
 Cette partie a été riche en apprentissage.
 
-# 2. L'application « Secrétariat »
+## 2. L'application « Secrétariat »
 
-## Présentation
+### Présentation
 
 Cette application permet aux secrétaires d'obtenir des informations sue les patients entrants ou sortants. Les identités s'affichent dans des fenêtres. Pour avoir des informations plus détaillées, il suffit de cliquer sur la ligne du patient.
 
-## Un peu de code
+### Un peu de code
 
 Cette application permet aux secrétaires d'obtenir des informations sur les patients entrants ou sortants. Les identités s'affichent dans des fenêtres. Pour avoir des informations plus détaillées, il suffit de cliquer sur la ligne du patient.
 
@@ -108,21 +105,21 @@ def identite(self) -> None:
         details.exec()
 ```
 
-## Technologie
+### Technologie
 
 python, json, pyside6, pillow, Mysql, traitement de fichiers
 
-## vue des interfaces
+### vue des interfaces
 
 ![Secretariat](assets/img/secretariat.png)
 
-# 3. Application "Medecin"
+## 3. Application "Medecin"
 
-## Présentation
+### Présentation
 
 Cette application mobile a été développée avec Java pour Android. Elle permet à un médecin de fournir des avis et des prescriptios pour un patient.
 
-## un peu de code
+### un peu de code
 
 Voici la constrution des valeurs de"Orescriptions:
 
@@ -172,14 +169,16 @@ private void valider() {
     }
 ```
 
-## Technologie
+### Technologie
 
 Java pour Android, MySQL
 
-## Vues des trois pages de l'application
+### Vues des trois pages de l'application
 
 ![medecin](assets/img/medecin.png)
 
-## Conclusion
+### Conclusion
 
 Android pour java est assez facile à prendre en mains. La partie réseau est tout même complexe avec des outils de dépannage pas forcément convaincant. Mais le rendu final est plutôt satisfaisant.
+
+*: image des chirurgiens -   izhar-ahamed - pixabay

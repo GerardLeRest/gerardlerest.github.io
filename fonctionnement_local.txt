@@ -1,0 +1,2 @@
+cd ~/Bureau/gerardlerest.github.io || exit
+bundle exec jekyll serve --livereload

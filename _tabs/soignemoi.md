@@ -1,26 +1,33 @@
 ---
 # the default layout is 'page'
+
 title: Projet SoigneMoi
 icon: fas fa-wrench
 order: 5
+
 ---
+
+<link rel="stylesheet" href="/assets/css/style.css">
+
+github: [Github - Soignemoi](https://github.com/GerardLeRest/soignemoi-symfony)
 
 Ce projet est celui que j’ai réalisé à la fin de mon année de bachelor CDA (Concepteur Développeur d’Applications).
 
-Le projet est composé de trois éléments :
+Le projet est composé de trois applications :
 
 - un site web qui permet l’interaction entre les patients et les soignants ;
+
 - un logiciel bureautique destiné au secrétariat ;
-- une application mobile pour les médecins.
-<p align="center">
-  <img src="assets/img/hopital.png" alt="logo" />
-</p>
 
-# 1. Le site web 
+- une application mobile pour les médecins. *
+  
+  ![chirugien](assets/img/chirurgiens.png)
 
-## Présentation  
+# 1. Le site web
 
-Le site est couplé à une base de données.
+## Présentation
+
+Le site est couplé à une base de données MySQL.
 
 J’ai commencé par utiliser Slim. J’ai dû construire le site brique après brique, ce qui m’a permis de bien comprendre la structure d’un framework.
 
@@ -54,21 +61,34 @@ public function donneesSorties(Request $request): Response
     }
 }
 ```
-## Technologies 
 
-Lanages: PHP, HTML, Twig, CSS
+## Technologies
+
+Langages: PHP, HTML, Twig, CSS, MySQL
 
 Frameworks : Slim, Symfony
 
-## Page d’accueil 
+* Illustration de l'image des chirugiens: Yamu_Jay - Pixabay
+
+## Page d’accueil
 
 ![Site web](assets/img/site_web.png)
 
+## Conclusion
+
+les deux framework ont eu leur fonction, le premier (Slim) pour comprendre la construction d'un framework, le deuxième m'a montré un outil plus simple. Dans ma première version, je ne suis pas arrivé à gérer les notions de rôles, ce que Symfony m'a permis de le faire.
+Cette partie a été riche en apprentissage.
+
 # 2. L'application « Secrétariat »
+
 ## Présentation
+
 Cette application permet aux secrétaires d'obtenir des informations sue les patients entrants ou sortants. Les identités s'affichent dans des fenêtres. Pour avoir des informations plus détaillées, il suffit de cliquer sur la ligne du patient.
+
 ## Un peu de code
+
 Cette application permet aux secrétaires d'obtenir des informations sur les patients entrants ou sortants. Les identités s'affichent dans des fenêtres. Pour avoir des informations plus détaillées, il suffit de cliquer sur la ligne du patient.
+
 ```python
 def identite(self) -> None:
         """Appelée quand l'utilisateur sélectionne une ligne"""
@@ -81,14 +101,85 @@ def identite(self) -> None:
         prenom = selected_items[1].text()
         nom = selected_items[2].text()
         identite = f"{prenom} {nom}"
-       
+
         details = AffichageDetails(identite, id) #None : séparer la fenêtre d'application et cette fenêtre détails
         details.setWindowFlag(Qt.Window)  # Pour une vraie fenêtre indépendante
         details.show()
         details.exec()
 ```
-## technologie
-python, json, pyside6, pillow, traitement de fichiers
+
+## Technologie
+
+python, json, pyside6, pillow, Mysql, traitement de fichiers
 
 ## vue des interfaces
+
 ![Secretariat](assets/img/secretariat.png)
+
+# 3. Application "Medecin"
+
+## Présentation
+
+Cette application mobile a été développée avec Java pour Android. Elle permet à un médecin de fournir des avis et des prescriptios pour un patient.
+
+## un peu de code
+
+Voici la constrution des valeurs de"Orescriptions:
+
+```java
+private void valider() {
+        // Récupérer les valeurs des EditText
+        String texteNomMedicament = nomMedicament.getText().toString();
+        String textePosologie = posologie.getText().toString();
+        String texteDateDeDebut = dateDeDebut.getText().toString();
+        String texteDateDeFin = dateDeFin.getText().toString();
+
+        String messageErreur = "";
+        if (texteNomMedicament.isEmpty()
+                || textePosologie.isEmpty()  // textePosologie ne peut pas être null
+                || texteDateDeDebut.isEmpty()
+                || texteDateDeFin.isEmpty()) {
+            messageErreur = "Au moins un des champs n'a pas été saisi.";
+        }
+
+        if (!messageErreur.isEmpty()) {
+            int duration = Toast.LENGTH_SHORT;
+            Toast toast = Toast.makeText(ActivitePrescription.this, messageErreur, duration);
+            toast.show();
+        } else {
+            // Remplissage du tableauPrescriptions
+            tableauPrescription.put("nomMedicament", texteNomMedicament);
+            tableauPrescription.put("posologie", textePosologie);
+            tableauPrescription.put("dateDeDebut", texteDateDeDebut);
+            tableauPrescription.put("dateDeFin", texteDateDeFin);
+
+            // récupération de l'intent de l'activité Avis
+            Intent intent = getIntent();
+
+            // ajouter les deux clés étrangères
+            // récupérer les valeurs de l'activité Avis
+            if (intent != null){
+                idMedecin = intent.getStringExtra("idMedecin");
+                idPatient = intent.getStringExtra("idPatient");
+                if (idMedecin!=null || idPatient!=null) {
+                    tableauPrescription.put("idMedecin", idMedecin);
+                    tableauPrescription.put("idPatient", idPatient);
+                }
+            }
+
+                transfertJSON(); // transférer les données
+        }
+    }
+```
+
+## Technologie
+
+Java pour Android, MySQL
+
+## Vues des trois pages de l'application
+
+![medecin](assets/img/medecin.png)
+
+## Conclusion
+
+Android pour java est assez facile à prendre en mains. La partie réseau est tout même complexe avec des outils de dépannage pas forcément convaincant. Mais le rendu final est plutôt satisfaisant.

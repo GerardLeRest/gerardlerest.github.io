@@ -4,7 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-
 ## Bienvenue !
 
 Je m'appelle Gérard Le Rest. Je suis développeur, auteur, et passionné par la création au sens large : code, écriture, pédagogie, GNU/Linux...

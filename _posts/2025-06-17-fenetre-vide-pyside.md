@@ -1,9 +1,9 @@
- ---
-
- title: "Créer une fenêtre vide"
- date: 2025-06-17
- categories: [cours]
- tags: [Python, pyside6]
+---
+title: "A - Créer une fenêtre vide"
+date: 2025-06-17 12:50:00 +0000
+categories: [cours]
+tags: [python, pyside6]
+---
 
 ## 1. Objectif
 

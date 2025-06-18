@@ -1,82 +1,112 @@
 ---
-title: "G - le QHBoxLayout"
-date: 2025-06-17 17:46:00 +0800
+title: "QGridLayout"
+date: 2025-06-17 18:32:05 +0800
 categories: [cours]
 tags: [python, pyside6]
 ---
 
-## 1. Objectif
 
-- Organiser des widgets côte à côte (horizontalement).
-- Ne plus utiliser .move(x, y) à la main.
-  
-  ## 2. Syntaxe simple
+## 1. Introduction
+
+QGridLayout est un gestionnaire de mise en page en tableau (grille).  
+Il place les widgets en lignes et colonnes, comme dans une feuille de calcul.
+
+C’est idéal pour :
+
+- Aligner des étiquettes et champs (QLabel + QLineEdit)
+- Construire des interfaces claires, même complexes
+- Contrôler facilement l’emplacement de chaque widget
+
+---
+
+## 2. Structure de base
+
+### 2.1 Syntaxe
+
+layout = QGridLayout()  
+layout.addWidget(widget, ligne, colonne)
+
+Tu peux aussi utiliser :
+
+layout.addWidget(widget, ligne, colonne, rowspan, colspan)
+
+Pour étendre un widget sur plusieurs lignes ou colonnes.
+
+---
+
+## 2.2 Exemple simple
 
 ```python
-from PySide6.QtWidgets import QHBoxLayout
+from PySide6.QtWidgets import (
+    QApplication, QWidget, QLabel, QLineEdit, QGridLayout
+)
+import sys
+
+class Fenetre(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Formulaire")
+
+        layout = QGridLayout()
+
+        layout.addWidget(QLabel("Prénom :"), 0, 0)
+        layout.addWidget(QLineEdit(), 0, 1)
+
+        layout.addWidget(QLabel("Nom :"), 1, 0)
+        layout.addWidget(QLineEdit(), 1, 1)
+
+        self.setLayout(layout)
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    fen = Fenetre()
+    fen.show()
+    app.exec()
 ```
 
-Ensuite :
+---
 
-- Créer un QHBoxLayout,
-- Ajouter tes widgets dedans,
-- L'appliquer à la fenêtre ou à une partie de la fenêtre.
-  
-  ## 3 Exemple simple
-  
-  ```python
-  from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout  
-  import sys
-  ```
+## 3. Options utiles
 
-class Fenetre(QWidget):  
-    def __init__(self):  
-        super().__init__()  
-        self.initialiser_fenetre()
+### 3.1 setSpacing
 
-    def initialiser_fenetre(self):
-    self.setWindowTitle("Exemple avec QHBoxLayout")
-    self.resize(400, 300)
-    
-    # Création du layout horizontal
-    layout = QHBoxLayout()
-    
-    # Création des boutons
-    bouton1 = QPushButton("Gauche")
-    bouton2 = QPushButton("Centre")
-    bouton3 = QPushButton("Droite")
-    
-    # Ajout des boutons au layout
-    layout.addWidget(bouton1)
-    layout.addWidget(bouton2)
-    layout.addWidget(bouton3)
-    
-    # Appliquer le layout à la fenêtre
-    self.setLayout(layout)
-    
-    self.show()
+Définit l’espace entre les widgets (par défaut : 6 px)
 
-if **name** == "**main**":  
-app = QApplication(sys.argv)  
-fenetre = Fenetre()  
-app.exec()
+layout.setSpacing(10)
 
-```
-✅ Ce que fait ce code :
-- Les trois boutons sont alignés de gauche à droite automatiquement.
-- Ils bougent proprement si tu redimensionnes la fenêtre.
-## 4 QVBoxLayout
-Pour aligner les éléments verticalement, on utilise QVBoxLayout
-```
-## 5 Espacement entre les widgets
-### 5.1 espacements entre les widgets
-```python
-layout.setSpacing(20)
-```
-l'espace intérieur est de 20px
-### 5.2 autour des widgets
-```python
-# Marges autour du layout (gauche, haut, droite, bas)
-layout.setContentsMargins(10, 30, 10, 10)
-```
-on donne quatre espaces autour des widgets
+### 3.2 setContentsMargins
+
+Ajoute une marge autour du layout dans le widget conteneur.
+
+layout.setContentsMargins(20, 10, 20, 10)
+
+---
+
+## 4. Étendre un widget (rowspan / colspan)
+
+layout.addWidget(QPushButton("Valider"), 2, 0, 1, 2)
+
+Ici, le bouton est placé en ligne 2, colonne 0, et occupe 1 ligne et 2 colonnes.
+
+---
+
+## 5. Exemple avancé
+
+layout.addWidget(QLabel("Adresse :"), 2, 0)  
+layout.addWidget(QLineEdit(), 2, 1, 1, 2)  (s'étend sur 2 colonnes)
+
+---
+
+## 6. Bonnes pratiques
+
+- Regrouper les widgets logiquement par lignes
+- Utiliser rowspan ou colspan pour les titres ou champs larges
+- Combiner avec d'autres layouts si besoin (QVBoxLayout, QHBoxLayout, etc.)
+
+---
+
+## 7. Conclusion
+
+QGridLayout est un outil puissant pour créer des interfaces propres, bien alignées, et facilement maintenables.  
+C’est souvent le choix par défaut pour les formulaires ou panneaux de configuration.
+

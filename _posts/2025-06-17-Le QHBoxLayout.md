@@ -6,56 +6,77 @@ tags: [python, pyside6]
 ---
 
 ## 1. Objectif
+
 - Organiser des widgets côte à côte (horizontalement).
 - Ne plus utiliser .move(x, y) à la main.
-## 2. Syntaxe simple
+  
+  ## 2. Syntaxe simple
 
 ```python
 from PySide6.QtWidgets import QHBoxLayout
 ```
+
 Ensuite :
+
 - Créer un QHBoxLayout,
 - Ajouter tes widgets dedans,
 - L'appliquer à la fenêtre ou à une partie de la fenêtre.
-## 3 Exemple simple
-```python
-from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout  
-import sys
+  
+  ## 3 Exemple simple
+  
+  ```python
+  from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout  
+  import sys
+  ```
 
 class Fenetre(QWidget):  
-	def __init__(self):  
-		super().__init__()  
-		self.initialiser_fenetre()
-		
-	def initialiser_fenetre(self):
+    def __init__(self):  
+        super().__init__()  
+        self.initialiser_fenetre()
+
+    def initialiser_fenetre(self):
     self.setWindowTitle("Exemple avec QHBoxLayout")
     self.resize(400, 300)
-
+    
     # Création du layout horizontal
     layout = QHBoxLayout()
-
+    
     # Création des boutons
     bouton1 = QPushButton("Gauche")
     bouton2 = QPushButton("Centre")
     bouton3 = QPushButton("Droite")
-
+    
     # Ajout des boutons au layout
     layout.addWidget(bouton1)
     layout.addWidget(bouton2)
     layout.addWidget(bouton3)
-
+    
     # Appliquer le layout à la fenêtre
     self.setLayout(layout)
-
+    
     self.show()
 
 if **name** == "**main**":  
 app = QApplication(sys.argv)  
 fenetre = Fenetre()  
 app.exec()
+
 ```
 ✅ Ce que fait ce code :
 - Les trois boutons sont alignés de gauche à droite automatiquement.
 - Ils bougent proprement si tu redimensionnes la fenêtre.
 ## 4 QVBoxLayout
 Pour aligner les éléments verticalement, on utilise QVBoxLayout
+```
+## 5 Espacement entre les widgets
+### 5.1 espacements entre les widgets
+```python
+layout.setSpacing(20)
+```
+l'espace intérieur est de 20px
+### 5.2 autour des widgets
+```python
+# Marges autour du layout (gauche, haut, droite, bas)
+layout.setContentsMargins(10, 30, 10, 10)
+```
+on donne quatre espaces autour des widgets

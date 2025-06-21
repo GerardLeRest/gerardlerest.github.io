@@ -38,6 +38,8 @@ if __name__ == "__main__":
     fen = Fenetre()
     fen.show()
     app.exec()
+    fichiers/photos/1S1/Fernandez_Sarah.jpg
+    
 ```
 
 ## Méthode 2 : Bouton avec texte et image

@@ -4,63 +4,79 @@ date: 2025-06-17 18:32:05 +0800
 categories: [cours]
 tags: [python, pyside6]
 ---
+## 1. Étapes simples
 
-## 1. Objectif :
+- Importer les classes suivantes : QRadioButton, QHBoxLayout, QVBoxLayout, QLabel, QPushButton
+- Créer une fenêtre avec un QVBoxLayout principal
+- Ajouter un QLabel fixe pour le titre
+- Créer trois boutons radio avec un texte
+- Les ajouter dans un QHBoxLayout
+- Ajouter un bouton "Valider" pour tester quel bouton est coché
+- Afficher le résultat dans un second QLabel
 
-Permettre à l’utilisateur de choisir une seule option parmi plusieurs (ex : Prénom+Nom, Prénom, Nom dans ton cas).  
-🔧 Utilisation de base :
+## 2. Code complet
 
-from PySide6.QtWidgets import QRadioButton, QVBoxLayout, QWidget, QApplication
+```python
+from PySide6.QtWidgets import (
+    QApplication, QWidget, QRadioButton, QLabel,
+    QHBoxLayout, QVBoxLayout, QPushButton
+)
+import sys
 
-app = QApplication(\[\])
+class Fenetre(QWidget):
 
-fenetre = QWidget()
+    def __init__(self):
+        super().__init__()
+        self.initialisation()
 
-## 2. Création des boutons radio
+    def initialisation(self):
+        self.setWindowTitle("Boutons radio avec layout")
+        self.resize(400, 200)
 
-radio1 = QRadioButton("Prénom+Nom")  
-radio2 = QRadioButton("Prénom")  
-radio3 = QRadioButton("Nom")
+        # Label fixe
+        label_choix = QLabel("Choisissez une option :")
 
-## 3. Définir un bouton coché par défaut
+        # Boutons radio
+        self.radio1 = QRadioButton("Option A")
+        self.radio2 = QRadioButton("Option B")
+        self.radio3 = QRadioButton("Option C")
 
-radio1.setChecked(True)
+        # Cocher une option par défaut (facultatif)
+        self.radio1.setChecked(True)
 
-## 4. Ajout dans un layout vertical
+        # Layout horizontal pour les boutons radio
+        layout_radio = QHBoxLayout()
+        layout_radio.addWidget(self.radio1)
+        layout_radio.addWidget(self.radio2)
+        layout_radio.addWidget(self.radio3)
 
-layout = QVBoxLayout()  
-layout.addWidget(radio1)  
-layout.addWidget(radio2)  
-layout.addWidget(radio3)
+        # Bouton pour valider le choix
+        bouton_valider = QPushButton("Valider")
+        bouton_valider.clicked.connect(self.verifier_choix)
 
-fenetre.setLayout(layout)  
-fenetre.show()  
-app.exec()
+        # Label pour afficher le choix sélectionné
+        self.label_resultat = QLabel("")
 
-💡 Regroupement logique avec QButtonGroup
+        # Layout principal
+        layout_principal = QVBoxLayout()
+        layout_principal.addWidget(label_choix)
+        layout_principal.addLayout(layout_radio)
+        layout_principal.addWidget(bouton_valider)
+        layout_principal.addWidget(self.label_resultat)
 
-Si tu veux récupérer plus facilement le bouton sélectionné :
+        self.setLayout(layout_principal)
+        self.show()
 
-from PySide6.QtWidgets import QButtonGroup
+    def verifier_choix(self):
+        if self.radio1.isChecked():
+            self.label_resultat.setText("Vous avez choisi : Option A")
+        elif self.radio2.isChecked():
+            self.label_resultat.setText("Vous avez choisi : Option B")
+        elif self.radio3.isChecked():
+            self.label_resultat.setText("Vous avez choisi : Option C")
 
-## 5. Créer un groupe de boutons
-
-groupe = QButtonGroup()  
-groupe.addButton(radio1, 1)  
-groupe.addButton(radio2, 2)  
-groupe.addButton(radio3, 3)
-
-## 6. Récupérer l’ID du bouton sélectionné
-
-def selection():  
-print("ID sélectionné :", groupe.checkedId())
-
-## 7. Par exemple, appel de cette fonction via un bouton "Valider"
-
-🧩 Dans ton interface
-
-Tu utilises :
-
-Trois options radio côte à côte,
-L’option par défaut est Prénom+Nom,
-Tu peux ajouter ces boutons dans un QHBoxLayout pour garder une présentation horizontal
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    fenetre = Fenetre()
+    app.exec()
+``

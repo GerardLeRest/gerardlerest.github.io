@@ -1,9 +1,12 @@
 ---
+
 title: "K - boutons radios"
 date: 2025-06-17 18:32:05 +0800
 categories: [cours]
 tags: [python, pyside6]
+
 ---
+
 ## 1. Étapes simples
 
 - Importer les classes suivantes : QRadioButton, QHBoxLayout, QVBoxLayout, QLabel, QPushButton
@@ -79,4 +82,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     fenetre = Fenetre()
     app.exec()
-``
+```

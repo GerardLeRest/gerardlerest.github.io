@@ -1,10 +1,9 @@
 ---
-title: "QGridLayout"
+title: "L - QGridLayout"
 date: 2025-06-17 18:32:05 +0800
 categories: [cours]
 tags: [python, pyside6]
 ---
-
 
 ## 1. Introduction
 
@@ -109,4 +108,3 @@ layout.addWidget(QLineEdit(), 2, 1, 1, 2)  (s'étend sur 2 colonnes)
 
 QGridLayout est un outil puissant pour créer des interfaces propres, bien alignées, et facilement maintenables.  
 C’est souvent le choix par défaut pour les formulaires ou panneaux de configuration.
-

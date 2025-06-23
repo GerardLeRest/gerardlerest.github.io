@@ -1,5 +1,5 @@
 ---
-title: "Boutons avec images"
+title: "F - Boutons avec images"
 date: 2025-06-17 20:33:05 +0800
 categories: [cours]
 tags: [python, pyside6]
@@ -39,7 +39,6 @@ if __name__ == "__main__":
     fen.show()
     app.exec()
     fichiers/photos/1S1/Fernandez_Sarah.jpg
-    
 ```
 
 ## Méthode 2 : Bouton avec texte et image

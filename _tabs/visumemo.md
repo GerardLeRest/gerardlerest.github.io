@@ -44,4 +44,4 @@ Python, SQLite, Tkinter
 
 ## 5 Conclusion
 
-Le programme fonctionne parfaitemnt, Je viens de passer de Tkinter à PySide6. Je travaille actuellent sur des versions pour l'asssemblée et pour les entreprises.
+Le programme fonctionne parfaitemnt, Je viens de passer de Tkinter à PySide6. Je travaille actuellent sur des versions pour l'asssemblée nationale et pour les entreprises.

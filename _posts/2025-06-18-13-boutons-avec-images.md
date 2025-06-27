@@ -1,5 +1,5 @@
 ---
-title: "F - Boutons avec images"
+title: "13 - Boutons avec images"
 date: 2025-06-17 20:33:05 +0800
 categories: [cours]
 tags: [python, pyside6]

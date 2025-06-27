@@ -1,5 +1,5 @@
 ---
-title: "L - QGridLayout"
+title: "12 - QGridLayout"
 date: 2025-06-17 18:32:05 +0800
 categories: [cours]
 tags: [python, pyside6]

@@ -1,5 +1,5 @@
 ---
-title: "B - Comment ajouter un label"
+title: "2 - Comment ajouter un label"
 date: 2025-06-17 17:46:00 +0800
 categories: [cours]
 tags: [python, pyside6]
@@ -27,7 +27,7 @@ class Fenetre(QWidget):
     def initialisation(self):
         self.setWindowTitle("Fenêtre avec un Label")
         self.resize(400, 300)
-        
+
         # Création du label
         label = QLabel("Bienvenue sur PySide !", self)
         label.move(50, 50)  # Position du label (x=50, y=50)
@@ -41,7 +41,9 @@ if __name__ == "__main__":
 ```
 
 Remarque:
+
 ```python
 self.label.setText(message)
 ```
+
 permet d'écrit la valeur de message dans le Label "label"

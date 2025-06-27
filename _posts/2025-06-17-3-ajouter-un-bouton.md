@@ -1,5 +1,5 @@
 ---
-title: "C - Ajouter un bouton"
+title: "3 - Ajouter un bouton"
 date: 2025-06-17 14:00:00 +0000
 categories: [cours]
 tags: [python, pyside6]

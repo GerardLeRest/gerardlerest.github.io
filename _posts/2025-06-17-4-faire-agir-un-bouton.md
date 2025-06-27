@@ -1,5 +1,5 @@
 ---
-title: "D - Faire agir un bouton"
+title: "4 - Faire agir un bouton"
 date: 2025-06-17 12:50:00 +0000
 categories: [cours]
 tags: [python, pyside6]

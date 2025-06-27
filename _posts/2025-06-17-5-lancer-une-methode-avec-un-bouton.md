@@ -1,5 +1,5 @@
 ---
-title: "E - Lancer une méthode avec un bouton"
+title: "5 - Lancer une méthode avec un bouton"
 date: 2025-06-17 12:50:00 +0000
 categories: [cours]
 tags: [python, pyside6]

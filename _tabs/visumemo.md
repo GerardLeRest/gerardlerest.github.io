@@ -44,4 +44,4 @@ Python, SQLite, Tkinter
 
 ## 5 Conclusion
 
-Le programme fonctionne parfaitemnt, mais Tkinter ne permet pas de créer des interfaces modernes. Comme je l'ai fait popur Secretariat, je souhaite moderniser l'interface en utilisant Pyside6.
+Le programme fonctionne parfaitemnt, Je viens de passer de Tkinter à PySide6. Je travaille sur des versions pour l'asssemblée et pour les entreprises sont à venir.

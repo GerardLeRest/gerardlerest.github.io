@@ -23,8 +23,7 @@ Quatre modes d'apprentissage sont proposés :
 - mode **Test mental** : le portrait apparaît avec des `???`, laissant le temps à l'utilisateur de réfléchir. En appuyant sur le bouton `→` (sous la photo), la solution apparaît  
 - mode **Test écrit** : on écrit le prénom et/ou le nom. Il faut utiliser la zone en haut à droite avec les trois boutons : *Valider*, *Effacer* et *Suite*
 - mode **Recherche** : on peut rechercher un ou plusieurs individus présents dans l'organisme
-- [Video de presentation](https://youtu.be/FgAwiuIiPuc)
-  
+- [Video de presentation](https://youtu.be/PE2b6eUugHk)
 
 Trois catégories ont été créées :
 

@@ -3,7 +3,7 @@
 
 title: PyCDCover - V2
 icon: fas fa-wrench  
-order: 6 
+order: 4 
 ---
 
 code source sur github: [PyCDCover](https://github.com/GerardLeRest/pycdcover-v2)

@@ -1,8 +1,9 @@
 ---
-# the default layout is 'page'
-title: "À PROPOS DE MOI"
+title: "À propos"
 icon: fas fa-info-circle
 order: 5
+lang: fr
+permalink: /a-propos/
 ---
 
 ## Bienvenue !

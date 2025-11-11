@@ -3,7 +3,7 @@
 
 title: Projet SoigneMoi
 icon: fas fa-wrench
-order: 5
+order: 2
 
 ---
 

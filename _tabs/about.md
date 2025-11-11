@@ -1,8 +1,8 @@
 ---
 # the default layout is 'page'
-title: "À PROPOS"
+title: "À PROPOS DE MOI"
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
 ## Bienvenue !

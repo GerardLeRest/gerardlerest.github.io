@@ -1,0 +1,15 @@
+home: Accueil
+about: À propos
+archives: Archives
+categories: Catégories
+tags: Étiquettes
+projects: Projets
+search: Rechercher
+related_posts: Articles connexes
+post: Article
+posts: Articles
+page: Page
+pages: Pages
+paginator:
+  previous: « Précédent
+  next: Suivant »

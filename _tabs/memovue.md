@@ -3,7 +3,7 @@
 
 title: Projet MemoVue  
 icon: fas fa-wrench  
-order: 6  
+order: 3 
 ---
 
 code source sur github: [MemoVue](https://github.com/GerardLeRest/MemoVue)

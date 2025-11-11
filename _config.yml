@@ -7,7 +7,7 @@ theme: jekyll-theme-chirpy
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
 lang: fr
-locale: fr
+
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Europe/Paris
 
@@ -20,10 +20,13 @@ tagline: L’imagination au service de l’informatique # it will display as the
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  
+include:
+ - _includes/head-custom.html
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+# url: ""
 
 github:
   username: GerardLeRest # change to your GitHub username
@@ -147,7 +150,7 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 5
+paginate: 10
 
 url: "https://gerardlerest.github.io"
 # The base URL of your site
@@ -219,4 +222,8 @@ exclude:
 
 jekyll-archives:
   enabled: []
+  
+  
+ 
+
 

@@ -30,12 +30,10 @@ De la gauche à la droite, il faut appuyer sur:
 5 - Générer le PDF
 
 PDF CD_Maquette.pdf:
-[Télécharger le PDF](assets/CD_maquette.pdf)
+[Télécharger le PDF]({{ '/assets/CD_maquette.pdf' | relative_url }})
 
 PDF CD_Multi-albums.pdf:
-[Télécharger le PDF](assets/CD_Multi-albums.pdf)
-
-
+[Télécharger le PDF]({{ '/assets/CD_Multi-albums.pdf' | relative_url }})
 
 
 ## 3. Un peu de code
@@ -81,7 +79,7 @@ Python 3, PySide6, Reportlab, pillow
 
 ## 4. Interface
 
-![PyCDCover](assets/img/PyCDCover.png)
+![PyCDCover]({{ '/assets/img/PyCDCover.png' | relative_url }})
 
 ## 5. Conclusion
 

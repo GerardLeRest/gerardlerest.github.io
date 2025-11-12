@@ -34,3 +34,16 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* === Masquer la barre de recherche (loupe + champ) === */
+#search-trigger,
+.search-wrapper,
+#search-wrapper,
+#search {
+  display: none !important;
+}
+
+
+
+
+

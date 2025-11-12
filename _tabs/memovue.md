@@ -1,6 +1,7 @@
 ---
 # the default layout is 'page'
 
+layout: page
 title: Projet MemoVue  
 icon: fas fa-wrench  
 order: 3 

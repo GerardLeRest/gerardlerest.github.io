@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 
-title: PyCDCover - V2
+title: PyCDCover
 icon: fas fa-wrench  
 order: 4 
 ---
@@ -11,9 +11,10 @@ code source sur github: [PyCDCover](https://github.com/GerardLeRest/pycdcover-v2
 ## 1. Présentation de PyCDCover
 
 PyCDCover est un générateur de jaquettes:
+
 - pour des maquettes d'albums (un album/CD)
 - pour des CD multi-albums (plusieurs albums par CD)
-Il est également possible de travailler directement avec des dossiers de fichiers musicaux 
+  Il est également possible de travailler directement avec des dossiers de fichiers musicaux 
 
 ## 2. Fonctionnement du logiciel
 
@@ -22,19 +23,20 @@ CD (easytag, par exemple). Sans ces informations (artist, album, année, genre, 
 Au minimum, il faut taguer les artistes et les albums. Ces deux informtions sont indispensables pour récuperer la photo de 
 l'album.
 De la gauche à la droite, il faut appuyer sur:
-1 - Donner un nom au CD (pour une quette - 1 album), donner le nom de l'ariste.
-2 - Récupérer les tags du dossier ou du CD
-3 - Éditer et/ou modifier les valeus des tags
-4 - Récupérer les images à partir de Itunes ou Musicbrainz
-4 - Créer les faces avant et arrières du CD
-5 - Générer le PDF
 
-PDF CD_Maquette.pdf:
-[Télécharger le PDF]({{ '/assets/CD_maquette.pdf' | relative_url }})
+1. Donner un nom au CD (pour une maquette - 1 album), donner le nom de l'ariste.
+2. Récupérer les tags du dossier ou du CD
+3. Éditer et/ou modifier les valeus des tags
+4. Récupérer les images à partir de Itunes ou Musicbrainz
+5. Créer les faces avant et arrières du CD
+6. Générer le PDF
 
-PDF CD_Multi-albums.pdf:
-[Télécharger le PDF]({{ '/assets/CD_Multi-albums.pdf' | relative_url }})
 
+![CD_maquette](assets/img/CD_maquette.png)
+*Figure 1 :CD-maquette*
+
+![CD-maquette_multi-albums](assets/img/CD_multi-albums.png)
+*Figure 2 :CD-multi-albums*
 
 ## 3. Un peu de code
 
@@ -51,7 +53,7 @@ class Titres:
         self.x = 0
         self.y = 0
         # dossiers
-        self.dossier_racine = Path(__file__).parent.parent
+        self.dossier_racine = Path(__file__).parent.parents
         self.dossier_polices = self.dossier_racine / "ressources" / "polices"
         self.dossier_pycdcover = Path.home() / "PyCDCover"
 
@@ -79,7 +81,7 @@ Python 3, PySide6, Reportlab, pillow
 
 ## 4. Interface
 
-![PyCDCover]({{ '/assets/img/PyCDCover.png' | relative_url }})
+![PyCDCover](assets/img/PyCDCover.png)
 
 ## 5. Conclusion
 

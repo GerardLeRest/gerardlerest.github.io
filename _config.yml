@@ -47,6 +47,9 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
+# ajouté 13/11/25
+custom_css: assets/css/custom.css
+
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code

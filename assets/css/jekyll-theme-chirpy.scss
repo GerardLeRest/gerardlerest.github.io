@@ -1,0 +1,43 @@
+--- 
+--- 
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+.bundle
+{%- endif -%}
+';
+
+ /* append your custom style below */
+
+/* === Masquer la barre de recherche (loupe + champ) === */
+#search-trigger,
+.search-wrapper,
+#search-wrapper,
+#search {
+  display: none !important;
+}
+
+/* === Désactiver complètement la barre du haut === */
+ #topbar,
+ .topbar-wrapper {
+  display: none !important;
+} 
+ 
+  #main-wrapper {
+  padding-top: 0 !important; /* retire l'espace réservé à la top bar */
+}
+
+
+body {
+  background: 
+    linear-gradient(
+      to right,
+      #f6f8fa 18%,   /* bande gauche */
+      #ffffff 18%,  /* début milieu blanc */
+      #ffffff 82%,  /* fin milieu blanc */
+      #f6f8fa 82%   /* bande droite */
+    ) !important;
+  background-attachment: fixed !important;
+}
+

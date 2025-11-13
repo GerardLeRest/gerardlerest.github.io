@@ -12,25 +12,25 @@ code source sur github: [PyCDCover](https://github.com/GerardLeRest/pycdcover-v2
 
 PyCDCover est un générateur de jaquettes:
 
-- pour des maquettes d'albums (un album/CD)
+- pour des maquettes d'albums (un album par CD)
 - pour des CD multi-albums (plusieurs albums par CD)
+  
+  
   Il est également possible de travailler directement avec des dossiers de fichiers musicaux 
 
 ## 2. Fonctionnement du logiciel
 
-Avant d'utiliser le CD, il faut taguer les chansons, soit dans celles du dossier ou du
-CD (easytag, par exemple). Sans ces informations (artist, album, année, genre, titres), le logiciels ne pourra pas fournir les informations nécessaire.
-Au minimum, il faut taguer les artistes et les albums. Ces deux informtions sont indispensables pour récuperer la photo de 
-l'album.
-De la gauche à la droite, il faut appuyer sur:
+Avant d'utiliser le CD, il faut taguer les chansons, soit dans celles du dossier ou soit dans celles du CD. On peut utiliser Easytag, par exemple. Sans ces informations (artist, album, année, genre, titres), le logiciels ne pourra pas traiter ces informations nécessaires.
+Les tags récupérés, le nom de l'artistes et de l'album permettent de récpérer depuis des sites internet la photo de la jaquette.
 
-1. Donner un nom au CD (pour une maquette - 1 album), donner le nom de l'ariste.
+Sur le logiciel, de la gauche vers la droite, il faut appuyer sur:
+
+1. Donner un nom au CD. Pour une maquette - 1 album), il faut donner le nom de l'ariste à ce titre.
 2. Récupérer les tags du dossier ou du CD
 3. Éditer et/ou modifier les valeus des tags
 4. Récupérer les images à partir de Itunes ou Musicbrainz
 5. Créer les faces avant et arrières du CD
 6. Générer le PDF
-
 
 ![CD_maquette](assets/img/CD_maquette.png)
 *Figure 1 :CD-maquette*
@@ -77,7 +77,7 @@ class Titres:
 
 ## 3. Technologie
 
-Python 3, PySide6, Reportlab, pillow
+Python 3, PySide6, Reportlab, Pillow
 
 ## 4. Interface
 

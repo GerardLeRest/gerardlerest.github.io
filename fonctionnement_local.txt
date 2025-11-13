@@ -1,5 +1,8 @@
-cd ~/Bureau/gerardlerest.github.io || exit
-bundle exec jekyll serve --livereload
+- démarrer les serveur:
+cd ~/Bureau/gerardlerest.github.io
+bundle exec jekyll clean
+bundle exec jekyll clean:
 
-css en local:
-<link rel="stylesheet" href="/assets/css/style.css">
+- sur le client:
+http://localhost:4000/
+

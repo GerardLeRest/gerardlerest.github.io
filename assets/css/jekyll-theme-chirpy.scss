@@ -1,43 +1,119 @@
---- 
---- 
+---
+---
 
 /* prettier-ignore */
-@use 'main
-{%- if jekyll.environment == 'production' -%}
-.bundle
-{%- endif -%}
-';
+@use 'main{% if jekyll.environment == "production" %}.bundle{% endif %}';
 
- /* append your custom style below */
+/* ------------------------------------------------------- */
+/*   MASQUER LA RECHERCHE ET LA TOPBAR                     */
+/* ------------------------------------------------------- */
 
-/* === Masquer la barre de recherche (loupe + champ) === */
 #search-trigger,
 .search-wrapper,
 #search-wrapper,
-#search {
+#search,
+#topbar,
+.topbar-wrapper {
   display: none !important;
 }
 
-/* === Désactiver complètement la barre du haut === */
- #topbar,
- .topbar-wrapper {
-  display: none !important;
-} 
- 
-  #main-wrapper {
-  padding-top: 0 !important; /* retire l'espace réservé à la top bar */
+/* ------------------------------------------------------- */
+/*   SUPPRIMER LE HEADER VISUEL MAIS GARDER LE CHAT        */
+/* ------------------------------------------------------- */
+
+header.site-header {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: auto !important;   /* garder la structure interne */
+  min-height: 0 !important;
+  overflow: visible !important;
 }
 
+header.site-header::before,
+header.site-header::after {
+  display: none !important;
+}
+
+header.site-header * {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ------------------------------------------------------- */
+/*   FORCER LE BOUTON DU MENU (CHAT)                       */
+/* ------------------------------------------------------- */
+
+#sidebar-trigger {
+  display: block !important;
+  top: 20px !important;
+}
+
+#sidebar-trigger svg {
+  display: block !important;
+}
+
+/* ------------------------------------------------------- */
+/*   MAIN WRAPPER – éviter le décalage                     */
+/* ------------------------------------------------------- */
+
+#main-wrapper {
+  padding-top: 0 !important;
+  background: transparent !important;
+}
+
+/* ------------------------------------------------------- */
+/*   FOND EN TROIS BANDES                                  */
+/* ------------------------------------------------------- */
 
 body {
-  background: 
-    linear-gradient(
-      to right,
-      #f6f8fa 18%,   /* bande gauche */
-      #ffffff 18%,  /* début milieu blanc */
-      #ffffff 82%,  /* fin milieu blanc */
-      #f6f8fa 82%   /* bande droite */
-    ) !important;
+  margin: 0 !important;
+  background: linear-gradient(
+    to right,
+    #f6f8fa 18%,
+    #ffffff 18%,
+    #ffffff 82%,
+    #f6f8fa 82%
+  ) !important;
   background-attachment: fixed !important;
+  background-color: transparent !important;
 }
+
+/* ------------------------------------------------------- */
+/*   PATCH ULTRA-CIBLÉ : SUPPRIMER LE RECTANGLE BLANC      */
+/* ------------------------------------------------------- */
+
+/* L’ennemi : Chirpy applique le blanc sur .container et .main */
+.container,
+.container *,
+#main,
+main,
+#main-wrapper,
+#main-wrapper * {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* ------------------------------------------------------- */
+/*     Titre automatique centré dans la zone principale     */
+/*       (compatible Chirpy + structure de ton site)        */
+/* ------------------------------------------------------- */
+
+#main-wrapper .container > *:first-child::before {
+  content: "{{ page.title }}";
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background: transparent !important;
+}
+
+
 

@@ -6,6 +6,8 @@ order: 1
 permalink: /
 ---
 
+
+
 # Bienvenue sur « Créativités informatiques »
 
 *Créativités informatiques* est un espace dédié à la présentation de projets informatiques réalisés avec passion et curiosité.

@@ -6,6 +6,7 @@ order: 1
 permalink: /
 ---
 
+<link rel="icon" href="{{ site.favicon }}">
 
 ## Bienvenue sur « Créativités informatiques »
 

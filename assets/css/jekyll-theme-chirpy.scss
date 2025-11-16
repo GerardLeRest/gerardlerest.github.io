@@ -115,5 +115,19 @@ main,
   background: transparent !important;
 }
 
+h1 {
+  color: #F57C00; /* Orange de l'avatar */
+}
+
+h2 {
+  color: #4A4238; /* Anthracite */
+}
+
+/* Couleur du titre "Code et création" */
+.site-title,
+.sidebar .site-title,
+.navbar .site-title {
+  color: #4A4238 !important;  /* Orange avatar */
+}
 
 

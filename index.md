@@ -6,7 +6,8 @@ order: 1
 permalink: /
 ---
 
-# Bienvenue sur « Créativités informatiques »
+
+## Bienvenue sur « Créativités informatiques »
 
 *Créativités informatiques* est un espace dédié à la présentation de projets informatiques réalisés avec passion et curiosité.
 
@@ -32,6 +33,7 @@ Bonne visite, et n’hésitez pas à me contacter si vous souhaitez plus de dét
 
 ---
 
-![Image d’un ordinateur portable](assets/img/laptop.jpg)
-
-*freephotocc – Pixabay*
+<figure style="text-align: center;">
+  <img src="assets/img/ordinateur_portable.png" alt="Image d’un ordinateur portable">
+  <figcaption><em>freephotocc – Pixabay</em></figcaption>
+</figure>

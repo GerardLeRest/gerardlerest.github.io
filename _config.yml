@@ -50,6 +50,9 @@ social:
 # ajouté 13/11/25
 custom_css: assets/css/custom.css
 
+# ajouté le 16/11/25
+favicon: "/favicon.ico"
+
 # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
@@ -106,7 +109,7 @@ search: false
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/chat_noir.png
+avatar: /assets/img/avatar400x400.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

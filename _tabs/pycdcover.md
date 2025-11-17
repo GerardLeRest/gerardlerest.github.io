@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 
-title: PyCDCover
+title: Projet PyCDCover
 icon: fas fa-wrench  
 order: 4 
 ---
@@ -14,8 +14,7 @@ PyCDCover est un générateur de jaquettes:
 
 - pour des maquettes d'albums (un album par CD)
 - pour des CD multi-albums (plusieurs albums par CD)
-  
-  
+
   Il est également possible de travailler directement avec des dossiers de fichiers musicaux 
 
 ## 2. Fonctionnement du logiciel
@@ -31,10 +30,12 @@ Sur le logiciel, de la gauche vers la droite, il faut appuyer sur:
 4. Récupérer les images à partir de Itunes ou Musicbrainz
 5. Créer les faces avant et arrières du CD
 6. Générer le PDF
-
+- cette maquette a été faite avec l'accord du groupe
+@CENT DÉTRESSES
 ![CD_maquette](assets/img/CD_maquette.png)
 *Figure 1 :CD-maquette*
 
+- Cette jaquette multi-album présente les images en petit format, à but démonstratif et non lucratif.
 ![CD-maquette_multi-albums](assets/img/CD_multi-albums.png)
 *Figure 2 :CD-multi-albums*
 

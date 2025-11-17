@@ -47,11 +47,6 @@ social:
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-# ajouté 13/11/25
-custom_css: assets/css/custom.css
-
-# ajouté le 16/11/25
-favicon: "/favicon.ico"
 
 # Site Verification Settings
 webmaster_verifications:
@@ -98,8 +93,7 @@ pageviews:
 #     dark — Use the dark color scheme
 #
 theme_mode: # [light | dark]
-# ajouté 12/11/25  
-search: false
+
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
@@ -109,7 +103,7 @@ search: false
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/avatar400x400.png
+avatar: /assets/img/avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -231,8 +225,7 @@ exclude:
 jekyll-archives:
   enabled: []
 
-# ajouté 12/11/25  
-search: false
+
 
 
 

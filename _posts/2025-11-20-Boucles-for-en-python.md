@@ -3,7 +3,7 @@ title: Boucles for en Python
 author: Gérard LE REST
 date: 2025-11-20 17:34:00 +0800
 categories: [Python, Cours]
-tags: [Python, for]
+tags: [for, enuerate]
 ---
 
 # Les différentes formes de `for` en Python (avec résultats)

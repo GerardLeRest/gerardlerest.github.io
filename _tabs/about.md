@@ -34,7 +34,7 @@ Ce site est un espace de partage autour de mes projets techniques.
 
 ## Me contacter
 
-📧 [gerard.lerest@orange.fr](mailto:gerard.lerest@orange.fr)  
+📧 [ge.lerest@gmail.com](mailto:gerard.lerest@orange.fr)  
 💻 [Mon GitHub](https://github.com/GerardLeRest)
 
 Merci de votre visite 

@@ -1,9 +1,15 @@
 # Commande 2 — Lancer le site Jekyll
 
-``ỳml
+
+
+# Nettoyage et lancement du serveur local
+
+```
+`ỳml
 bundle exec jekyll clean
+```
 
 ```
 ```yml
-bundle jekyll serve
+bundle exec jekyll serve
 ```

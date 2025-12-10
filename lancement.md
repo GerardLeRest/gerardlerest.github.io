@@ -1,7 +1,5 @@
 # Commande 2 — Lancer le site Jekyll
 
-
-
 # Nettoyage et lancement du serveur local
 
 ```

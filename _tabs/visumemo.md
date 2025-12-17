@@ -6,13 +6,22 @@ icon: fas fa-wrench
 order: 6
 ---
 
-github: [VisuMemo](https://github.com/GerardLeRest/VisuMemo)
+[téléchargement MemoVue](https://github.com/GerardLeRest/MemoVue/releases)
 
 ## 1. Présentation de VisuMemo
 
 J'a toujours eu des difficultés à mémoriser les prénoms et les noms de mes élèves. Je me suis dit qu'une application pourrait m'aider mais aussi mes collègues.
 
-## 2 Un peu de code
+## Présentation
+
+Le logiciel Memoue s'utilise ainsi:
+
+- On choisit si l'on souhaite travailler avec des prénoms/noms prénoms ou noms
+- on sectionne ensuite le mode de mémorisation (apprentissage, par mode orale ou écrit
+  La partie de gauche permet de faire défiler les élèves tout en donnant leurs informations
+  Un mode de recherche permet de rotrouver un(des) élèves suivant leurs noms/prénoms
+
+## 3 Un peu de code
 
 Ce code désactive ou active les widgets pour l'option recherche dans le lycée
 
@@ -34,14 +43,14 @@ def configRechercher(self) -> None:
             self.checkbutAleatoire.configure(state="normal")
 ```
 
-## 3 Technologie
+## 4 Technologie
 
 Python, SQLite, Tkinter
 
-## 4 Interface
+## 5 Interface
 
 ![VisuMemo](assets/img/visu_memo.png)
 
-## 5 Conclusion
+## 6 Conclusion
 
-Le programme fonctionne parfaitemnt, mais Tkinter ne permet pas de créer des interfaces modernes. Comme je l'ai fait popur Secretariat, je souhaite moderniser l'interface en utilisant Pyside6.
+Le programme fonctionne parfaitement, L'interface a été retravaillé avec Pyside6.

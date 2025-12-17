@@ -18,8 +18,8 @@ Ce code désactive ou active les widgets pour l'option recherche dans le lycée
 
 ```python
 def configRechercher(self) -> None:
-        """activer/désactiver les listes les comboBox, des radiobuttons
-           et des labels"""
+        """Activer ou désactiver les ComboBox et les boutons radio
+           selon le mode sélectionné."""
         if (self.SelectModes.get() == "4"):
             # désactiver les radiobuttons
             self.checkbutAleatoire.configure(state="disabled")

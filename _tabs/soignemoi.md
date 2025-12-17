@@ -99,10 +99,10 @@ def identite(self) -> None:
         nom = selected_items[2].text()
         identite = f"{prenom} {nom}"
 
-        details = AffichageDetails(identite, id) #None : séparer la fenêtre d'application et cette fenêtre détails
+        details = AffichageDetails(identite, id)  # Fenêtre de détails du patient
         details.setWindowFlag(Qt.Window)  # Pour une vraie fenêtre indépendante
-        details.show()
-        details.exec()
+        details.show() # affichage de la fentre de détails du patient
+        details.exec() # blocage de la fennêtre parente
 ```
 
 ### Technologie
@@ -132,15 +132,15 @@ private void valider() {
         String texteDateDeFin = dateDeFin.getText().toString();
 
         String messageErreur = "";
-        if (texteNomMedicament.isEmpty()
-                || textePosologie.isEmpty()  // textePosologie ne peut pas être null
+        if (texteNomMedicament.isEmpty() 
+                || textePosologie.isEmpty() 
                 || texteDateDeDebut.isEmpty()
                 || texteDateDeFin.isEmpty()) {
             messageErreur = "Au moins un des champs n'a pas été saisi.";
         }
 
         if (!messageErreur.isEmpty()) {
-            int duration = Toast.LENGTH_SHORT;
+            int duration = Toast.LENGTH_SHORT; //durée standart
             Toast toast = Toast.makeText(ActivitePrescription.this, messageErreur, duration);
             toast.show();
         } else {
@@ -151,14 +151,14 @@ private void valider() {
             tableauPrescription.put("dateDeFin", texteDateDeFin);
 
             // récupération de l'intent de l'activité Avis
-            Intent intent = getIntent();
+            Intent intent = getIntent(); //deux valeurs enoyés pas "Avis""
 
             // ajouter les deux clés étrangères
             // récupérer les valeurs de l'activité Avis
             if (intent != null){
                 idMedecin = intent.getStringExtra("idMedecin");
                 idPatient = intent.getStringExtra("idPatient");
-                if (idMedecin!=null || idPatient!=null) {
+                if (idMedecin!=null && idPatient!=null) {
                     tableauPrescription.put("idMedecin", idMedecin);
                     tableauPrescription.put("idPatient", idPatient);
                 }

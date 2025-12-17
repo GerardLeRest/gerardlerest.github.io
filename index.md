@@ -6,9 +6,9 @@ order: 1
 permalink: /
 ---
 
-## Bienvenue sur « Créativités informatiques »
+## Bienvenue sur « Créations & codes »
 
-*Créativités informatiques* est un espace dédié à la présentation de projets informatiques réalisés avec passion et curiosité.
+*Créations & codes* est un espace dédié à la présentation de projets informatiques réalisés avec passion et curiosité.
 
 Chaque projet présenté ici est né d’un besoin concret, d’une idée originale ou d’un défi personnel.  
 Que ce soit pour apprendre, créer, partager ou résoudre un vrai problème, les outils numériques offrent un terrain d’exploration infini.

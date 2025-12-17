@@ -66,14 +66,11 @@ class Titres:
 
     def titre_horizontal(self) -> None:
         """Création de l'image horizontale du titre"""
-        print("titre_horizontal")
+        # image contenant le titre horizontal
         imageH = Image.new("RGB", (self.L_devant, 220), "white")
         draw = ImageDraw.Draw(imageH)
         police1 = self.dossier_polices / "FreeSerif.ttf"
-        try:
-            font1 = ImageFont.truetype(str(police1), 60)
-        except OSError:
-            font1 = ImageFont.load_default()
+        font1 = ImageFont.truetype(str(police1), 60)
         bbox = draw.textbbox((0, 0), self.titre, font=font1)
         largeur_texte = bbox[2] - bbox[0]
         x = (self.L_devant - largeur_texte) / 2

@@ -1,25 +1,26 @@
 ---
 # the default layout is 'page'
 
-title: Projet VisuMemo
+title: Projet Piveo
 icon: fas fa-wrench
 order: 6
 ---
 
-[téléchargement MemoVue](https://github.com/GerardLeRest/MemoVue/releases)
+[téléchargement Piveo](https://github.com/GerardLeRest/Piveo/releases)
 
-## 1. Présentation de VisuMemo
+## 1. Présentation de Piveo
 
 J'a toujours eu des difficultés à mémoriser les prénoms et les noms de mes élèves. Je me suis dit qu'une application pourrait m'aider mais aussi mes collègues.
 
 ## Présentation
 
-Le logiciel Memoue s'utilise ainsi:
+Le logiciel Piveo s'utilise ainsi:
 
+- On sélectionne la structure (Ecole, Entreprise, Parlement)
 - On choisit si l'on souhaite travailler avec des prénoms/noms prénoms ou noms
 - on sectionne ensuite le mode de mémorisation (apprentissage, par mode orale ou écrit
-  La partie de gauche permet de faire défiler les élèves tout en donnant leurs informations
-  Un mode de recherche permet de rotrouver un(des) élèves suivant leurs noms/prénoms
+- La partie de gauche permet de faire défiler les élèves tout en donnant leurs informations
+- Un mode de recherche permet de rotrouver un(des) élèves suivant leurs noms/prénoms
 
 ## 3 Un peu de code
 

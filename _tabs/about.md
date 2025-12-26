@@ -24,7 +24,7 @@ Ce site est un espace de partage autour de mes projets techniques.
 
 ## Projets récents
 
-- **VisuMemo** : outil Python pour apprendre les prénoms et noms d’élèves, ou ceux de personnels
+- **Piveo** : outil Python pour apprendre les prénoms et noms d’élèves, ou ceux de personnels
 - **SoigneMoi** : suite logicielle santé (web, mobile, desktop)
 - **PyCDCover** : générateur de jaquettes CD en PDF
 - **PlateauUU6U9** : logiciel d'organisation de jeux et matchs pour les jeunes footballeurs

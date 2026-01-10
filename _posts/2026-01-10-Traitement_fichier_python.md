@@ -1,9 +1,9 @@
 ---
 title: Traitement des fichiers en Python
 author: Gérard LE REST
-date: date: 2026-01-10 14:48:00
+date: 2026-01-10 14:48:00
 categories: [Python, Cours]
-tags: [Fichier, dossier]
+tags: [fichier, dossier]
 ---
 
 # Traitement des fichiers en Python

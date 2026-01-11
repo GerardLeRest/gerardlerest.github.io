@@ -10,6 +10,7 @@ tags: [exe, PyInstaller, Inno Setup]
 
 - Vue
 - Controleur
+- locales
 - Modele
 - ressources
 - icone.ico
@@ -17,7 +18,7 @@ tags: [exe, PyInstaller, Inno Setup]
 - pycdcover.iss
 - requirements.txt
 
-# 2. Création du premier dans dist
+# 2. Création du premier exécutable dans dist
 
 - cmd:
   
@@ -27,6 +28,7 @@ tags: [exe, PyInstaller, Inno Setup]
     --add-data "ressources;ressources" ^
     --add-data "Vue;Vue" ^
     --add-data "Controleur;Controleur" ^
+    --add-data "locales;locales" ^
     --add-data "Modele;Modele" ^
     pycdcover.pyw
   ```
@@ -39,6 +41,7 @@ tags: [exe, PyInstaller, Inno Setup]
     --add-data "ressources;ressources" `
     --add-data "Vue;Vue" `
     --add-data "Controleur;Controleur" `
+    --add-data "locales;locales" `
     --add-data "Modele;Modele" `
     pycdcover.pyw
   ```

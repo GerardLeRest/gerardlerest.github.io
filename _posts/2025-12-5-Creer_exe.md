@@ -18,7 +18,9 @@ tags: [exe, PyInstaller, Inno Setup]
 - pycdcover.iss
 - requirements.txt
 
-# 2. Création du premier exécutable dans dist - PyCDCover
+# 2. fichiers exécutables créés avec pyinstaller
+
+## 2.1 PyCDCover: dans le dossier Dist: pycdcover.exe
 
 - cmd:
   
@@ -45,15 +47,33 @@ tags: [exe, PyInstaller, Inno Setup]
     --add-data "Modele;Modele" `
     pycdcover.pyw
   ```
+  ## 2.2 PyCDCover: dans le dossier Dist: **Piveo.exe**
 
-# 3 Installateur Inno Setup
+- cmd:
+  
+ - powershell:
+  
+  ```csharp
+  pyinstaller --onefile --windowed `
+  --name=Piveo `
+  --icon=piveo.ico `
+  --add-data "locales;locales" `
+  --add-data "piveo.ico;." `
+  Piveo.pyw
+  ```
+Il faut ajouter dans un même dossier les fichiers 3 JSON, les 3 fichiers db
+et le dossier "fichiers". Il faudra donc ensuite zipper ce dossier pour déployer les releases.
+
+# 3. Installateur Inno Setup - uniquement pour PyCDCover
+
+## 3.1 Introduction
 
 Mettre "pycdcover.iss" (chaGPT - Ci-dessous) à la racine du projet windows.
-Cliquer sur Built. Le fichier exe d'InnoSetup est dans le dossier "installer". 
-
+Le fichier exe d'InnoSetup se retrouve dans le dossier "installer". Il s'appelle: **PyCDCover_Setup.exe** (c' est le fichier éxéctuable à distribuer 
+Cliquer sur Built. 
 Cliquer sur Run et suivre les instructions.
 
-# 4 fichier Inno Setup (ex pycdcover.iss
+# 3.2 fichier Inno Setup (fichier: pycdcover.iss)
 
 ```ini
 ; -- pycdcover.iss --

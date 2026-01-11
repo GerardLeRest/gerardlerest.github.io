@@ -55,7 +55,7 @@ Cliquer sur Run et suivre les instructions.
 
 # 4 fichier Inno Setup (ex pycdcover.iss
 
-```ìss
+```ini
 ; -- pycdcover.iss --
 ; Script Inno Setup pour PyCDCover
 
@@ -99,5 +99,4 @@ Name: "desktopicon"; Description: "Créer une icône sur le bureau"; GroupDescri
 
 [Run]
 Filename: "{app}\pycdcover.exe"; Description: "Lancer PyCDCover"; Flags: nowait postinstall skipifsilent
-
 ```

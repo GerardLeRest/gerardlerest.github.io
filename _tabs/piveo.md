@@ -14,11 +14,14 @@ J'a toujours eu des difficultés à mémoriser les prénoms et les noms de mes �
 
 ## Présentation
 
+![Accueil](assets/img/accueil.png)
+
 Le logiciel Piveo s'utilise ainsi:
 
-- On sélectionne la structure (Ecole, Entreprise, Parlement)
-- On choisit si l'on souhaite travailler avec des prénoms/noms prénoms ou noms
+- On sélectionne l'orgnisme que l'on souhaite (voir ci-dessus)
+- Puis on choisit le groupe avec les combobox (ici: Classe et Options) - voir ci-dessous
 - on sectionne ensuite le mode de mémorisation (apprentissage, par mode orale ou écrit
+
 - La partie de gauche permet de faire défiler les élèves tout en donnant leurs informations
 - Un mode de recherche permet de rotrouver un(des) élèves suivant leurs noms/prénoms
 

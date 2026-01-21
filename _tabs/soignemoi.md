@@ -7,9 +7,6 @@ order: 5
 
 ---
 
-github: [Soignemoi-Symfony](https://github.com/GerardLeRest/soignemoi-symfony) <br>
-site internet: [soignemoi.net](https://www.soignemoi.net)
-
 Ce projet est celui que j’ai réalisé à la fin de mon année de bachelor CDA (Concepteur Développeur d’Applications).
 
 Le projet est composé de trois applications :
@@ -180,5 +177,9 @@ Java pour Android, MySQL
 ### Conclusion
 
 Android pour java est assez facile à prendre en mains. La partie réseau est tout même complexe avec des outils de dépannage pas forcément convaincant. Mais le rendu final est plutôt satisfaisant.
+
+## 4. Liens
+github: [Soignemoi-Symfony](https://github.com/GerardLeRest/soignemoi-symfony) <br>
+site internet: [soignemoi.net](https://www.soignemoi.net)
 
 *: image des chirurgiens -   izhar-ahamed - pixabay

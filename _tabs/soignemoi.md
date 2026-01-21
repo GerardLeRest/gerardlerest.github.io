@@ -20,7 +20,7 @@ Le projet est composé de trois applications :
 
 - une application mobile pour les médecins. 
 
-![chirugien](assets/img/chirurgiens.png)
+![chirugien](assets/img/soignemoi-chirurgiens.png)
 
 ## 1. Le site internet "SoigneMoi"
 
@@ -69,7 +69,7 @@ Frameworks : Slim, Symfony
 
 ### Page d’accueil
 
-![Site web](assets/img/site_web.png)
+![Site web](assets/img/soignemoi-site_web.png)
 
 ### Conclusion
 
@@ -111,7 +111,7 @@ python, json, pyside6, pillow, Mysql, traitement de fichiers
 
 ### vue des interfaces
 
-![Secretariat](assets/img/secretariat.png)
+![Secretariat](assets/img/soignemoi-secretariat.png)
 
 ## 3. Application "Medecin"
 
@@ -175,7 +175,7 @@ Java pour Android, MySQL
 
 ### Vues des trois pages de l'application
 
-![medecin](assets/img/medecin.png)
+![medecin](assets/img/soignemoi-medecin.png)
 
 ### Conclusion
 

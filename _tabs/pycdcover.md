@@ -6,7 +6,8 @@ icon: fas fa-wrench
 order: 7 
 ---
 
-[Téléchargement PyCDCover](https://github.com/GerardLeRest/pycdcover-v2)
+[Téléchargement - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2/releases)
+[Github - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2)
 
 ## 1. Présentation de PyCDCover
 
@@ -18,7 +19,11 @@ PyCDCover est un générateur de jaquettes:
   
   Il est également possible de travailler directement avec des dossiers de fichiers musicaux 
 
-## 2. Fonctionnement du logiciel
+## 2. Interface
+
+![PyCDCover](assets/img/pycdcover-interface.png)
+
+## 3. Fonctionnement du logiciel
 
 Avant d'utiliser le CD, il faut taguer les chansons, soit dans celles du dossier ou soit dans celles du CD. On peut utiliser Easytag, par exemple. Sans ces informations (artist, album, année, genre, titres), le logiciels ne pourra pas traiter ces informations nécessaires.
 Les tags récupérés, le nom de l'artistes et de l'album permettent de récpérer depuis des sites internet la photo de la jaquette.
@@ -38,14 +43,16 @@ Sur le logiciel, de la gauche vers la droite, il faut appuyer sur:
 6. Générer le PDF
 - cette maquette a été faite avec l'accord du groupe
   @CENT DÉTRESSES
-  ![CD_maquette](assets/img/CD_maquette.png)
-  *Figure 1 :CD-maquette*
+  
+  ![maquette 1 CD](assets/img/pycdcover-maquette.png)
+  *Jaquette - un album*
 
 - Cette jaquette multi-album présente les images en petit format, à but démonstratif et non lucratif.
-  ![CD-maquette_multi-albums](assets/img/CD_multi-albums.png)
-  *Figure 2 :CD-multi-albums*
+  
+  ![maquette multi-CD](assets/img/pycdcover-multi-albums.png)
+  *Jaquette multi-album*
 
-## 3. Un peu de code
+## 4. Un peu de code
 
 Ce code désactive ou active les widgets pour l'option recherche dans le lycée :
 
@@ -79,13 +86,9 @@ class Titres:
         imageH.save(self.dossier_pycdcover / "TitreH.png", "PNG")
 ```
 
-## 3. Technologie
+## 5. Technologie
 
-Python 3, PySide6, Reportlab, Pillow
-
-## 4. Interface
-
-![PyCDCover](assets/img/PyCDCover.png)
+Python 3, PySide6, Reportlab
 
 ## 5. Conclusion
 

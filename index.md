@@ -31,8 +31,5 @@ Si vous souhaitez en savoir plus sur moi ou sur le site, vous pouvez consulter l
 Bonne visite, et n’hésitez pas à me contacter si vous souhaitez plus de détails.
 
 ---
-
-<figure style="text-align: center;">
-  <img src="assets/img/ordinateur_portable.png" alt="Image d’un ordinateur portable">
-  <figcaption><em>freephotocc – Pixabay</em></figcaption>
-</figure>
+![ordinateur_portable](assets/img/home-ordinateur_portable.png)
+*Figure 1 – Légende de la photo*

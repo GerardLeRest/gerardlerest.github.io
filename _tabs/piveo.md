@@ -5,8 +5,8 @@ title: Projet Piveo
 icon: fas fa-wrench
 order: 6
 ---
-
-[téléchargement Piveo](https://github.com/GerardLeRest/Piveo/releases)
+[Github - Piveo](https://github.com/GerardLeRest/Piveo
+[téléchargement - Piveo](https://github.com/GerardLeRest/Piveo/releases)
 
 ## 1. Présentation de Piveo
 
@@ -14,7 +14,7 @@ J'a toujours eu des difficultés à mémoriser les prénoms et les noms de mes �
 
 ## Présentation
 
-![Accueil](assets/img/accueil.png)
+![Accueil](assets/img/piveo-accueil.png)
 
 Le logiciel Piveo s'utilise ainsi:
 
@@ -52,9 +52,10 @@ def configRechercher(self) -> None:
 Python, SQLite, Tkinter
 
 ## 5 Interface
-
-![VisuMemo](assets/img/visu_memo.png)
-
+![interface](assets/img/piveo-interface.png)
+*interfcae de l'application*
+     
 ## 6 Conclusion
 
 Le programme fonctionne parfaitement, L'interface a été retravaillé avec Pyside6.
+La prochaine étape consistera à créer un système MVC pour une lecture plus lisible.

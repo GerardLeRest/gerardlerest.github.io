@@ -1,5 +1,4 @@
 ---
-
 # the default layout is 'page'
 
 title: Projet Piveo
@@ -7,9 +6,6 @@ icon: fas fa-wrench
 order: 6
 
 ---
-
-[Github - Piveo](https://github.com/GerardLeRest/Piveo
-[téléchargement - Piveo](https://github.com/GerardLeRest/Piveo/releases)
 
 ## 1. Présentation de Piveo
 
@@ -64,3 +60,9 @@ Python, SQLite, Tkinter
 
 Le programme fonctionne parfaitement, L'interface a été retravaillé avec Pyside6.
 La prochaine étape consistera à créer un système MVC pour une lecture plus lisible.
+
+# 6. liens
+
+[Github - Piveo](https://github.com/GerardLeRest/Piveo) <br>
+[téléchargement - Piveo](https://github.com/GerardLeRest/Piveo/releases) <br>
+[wiki ubuntu-fr - piveo](https://doc.ubuntu-fr.org/piveo)

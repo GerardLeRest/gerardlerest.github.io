@@ -6,9 +6,6 @@ icon: fas fa-wrench
 order: 7 
 ---
 
-[Téléchargement - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2/releases)
-[Github - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2)
-
 ## 1. Présentation de PyCDCover
 
 PyCDCover est un générateur de jaquettes:
@@ -95,3 +92,8 @@ Python 3, PySide6, Reportlab
 PyCDCOver a été le deuxième logiciel conséquent que j'ai créé. Son interface était trop sommaire pour qu'il fut beaucoup utilisé. Mais il était référencé, donc
 je ne sais pas vraiment qu'est-ce qu'il en est. Pyside6m'a permis d"améiorer plus robuste en uilisant la technologie MVC et une interface plus attrayante, même
 si la nouvelle interface est perfectible.
+
+## 6. liens
+
+[Téléchargement - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2/releases) <br>
+[Github - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2)

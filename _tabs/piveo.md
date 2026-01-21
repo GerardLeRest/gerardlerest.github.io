@@ -1,10 +1,13 @@
 ---
+
 # the default layout is 'page'
 
 title: Projet Piveo
 icon: fas fa-wrench
 order: 6
+
 ---
+
 [Github - Piveo](https://github.com/GerardLeRest/Piveo
 [téléchargement - Piveo](https://github.com/GerardLeRest/Piveo/releases)
 
@@ -12,20 +15,26 @@ order: 6
 
 J'a toujours eu des difficultés à mémoriser les prénoms et les noms de mes élèves. Je me suis dit qu'une application pourrait m'aider mais aussi mes collègues.
 
-## Présentation
+## 2. Présentation
 
 ![Accueil](assets/img/piveo-accueil.png)
 
 Le logiciel Piveo s'utilise ainsi:
 
 - On sélectionne l'orgnisme que l'on souhaite (voir ci-dessus)
+
 - Puis on choisit le groupe avec les combobox (ici: Classe et Options) - voir ci-dessous
+
 - on sectionne ensuite le mode de mémorisation (apprentissage, par mode orale ou écrit
 
 - La partie de gauche permet de faire défiler les élèves tout en donnant leurs informations
+
 - Un mode de recherche permet de rotrouver un(des) élèves suivant leurs noms/prénoms
 
-## 3 Un peu de code
+![interface](assets/img/piveo-interface.png)
+*interfcae de l'application*
+
+## 3. Un peu de code
 
 Ce code désactive ou active les widgets pour l'option recherche dans le lycée
 
@@ -47,15 +56,11 @@ def configRechercher(self) -> None:
             self.checkbutAleatoire.configure(state="normal")
 ```
 
-## 4 Technologie
+## 4. Technologie
 
 Python, SQLite, Tkinter
 
-## 5 Interface
-![interface](assets/img/piveo-interface.png)
-*interfcae de l'application*
-     
-## 6 Conclusion
+## 5. Conclusion
 
 Le programme fonctionne parfaitement, L'interface a été retravaillé avec Pyside6.
 La prochaine étape consistera à créer un système MVC pour une lecture plus lisible.

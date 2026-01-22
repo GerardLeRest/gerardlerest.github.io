@@ -70,7 +70,7 @@ Frameworks : Slim, Symfony
 
 ### Conclusion
 
-les deux framework ont eu leur fonction, le premier (Slim) pour comprendre la construction d'un framework, le deuxième m'a montré un outil plus simple. Dans ma première version, je ne suis pas arrivé à gérer les notions de rôles, ce que Symfony m'a permis de le faire.
+les deux framework utilisés ont eu leur fonction, le premier (Slim) pour comprendre la construction d'un framework, le deuxième m'a montré un outil plus simple. Dans ma première version, je ne suis pas arrivé à gérer les notions de rôles, ce que Symfony m'a permis de le faire.
 Cette partie a été riche en apprentissage.
 
 ## 2. L'application « Secrétariat »
@@ -118,7 +118,7 @@ Cette application mobile a été développée avec Java pour Android. Elle perme
 
 ### un peu de code
 
-Voici la constrution des valeurs de"Orescriptions:
+Voici la construction des valeurs de "Prescriptions":
 
 ```java
 private void valider() {

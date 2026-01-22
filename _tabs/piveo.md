@@ -25,7 +25,7 @@ Le logiciel Piveo s'utilise ainsi:
 
 - La partie de gauche permet de faire défiler les élèves tout en donnant leurs informations
 
-- Un mode de recherche permet de rotrouver un(des) élèves suivant leurs noms/prénoms
+- Un mode de recherche permet de retrouver un(des) élèves suivant leurs noms/prénoms
 
 ![interface](assets/img/piveo-interface.png)
 *interfcae de l'application*
@@ -58,7 +58,7 @@ Python, SQLite, Tkinter
 
 ## 5. Conclusion
 
-Le programme fonctionne parfaitement, L'interface a été retravaillé avec Pyside6.
+Le programme fonctionne parfaitement, L'interface a été retravaillée avec Pyside6.
 La prochaine étape consistera à créer un système MVC pour une lecture plus lisible.
 
 # 6. liens

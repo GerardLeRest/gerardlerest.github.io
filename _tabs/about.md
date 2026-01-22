@@ -9,7 +9,7 @@ order: 8
 Je m'appelle Gérard Le Rest. Je suis développeur, auteur, et passionné par la création au sens large : code, écriture, pédagogie, GNU/Linux...
 
 Ce site est un espace de partage autour de mes projets techniques.  
-**Mes goûts vont clairement vers Python et PHP**, que j’utilise pour des applications web, desktop ou mobiles. Mais j'ai également utilisé Java et Java pour Android, par exemple.
+**Mes goûts vont clairement vers Python et PHP**, que j’utilise pour des applications web, desktop ou mobiles. Mais j'ai également utilisé Java et plus particulièrement Java pour Android, par exemple.
 
 ---
 
@@ -17,14 +17,13 @@ Ce site est un espace de partage autour de mes projets techniques.
 
 - Ancien enseignant en électrotechnique, électronique et physique appliquée pendant 25 ans.
 - Reconversion vers le développement web, mobile et desktop.
-- Formation Bachelor Concepteur Développeur d'Applications (PHP/Symfony)
-- Fan de GNU/Linux, de sobriété numérique et de code bien structuré
+- Formation Bachelor Concepteur Développeur d'Applications (PHP/Symfony). Fan de GNU/Linux, de sobriété numérique et de code bien structuré
 
 ---
 
 ## Projets récents
 
-- **Piveo** : outil Python pour apprendre les prénoms et noms d’élèves, ou ceux de personnels
+- **Piveo** : outil Python pour apprendre les prénoms et noms d’élèves, ou ceux du personnels
 - **SoigneMoi** : suite logicielle santé (web, mobile, desktop)
 - **PyCDCover** : générateur de jaquettes CD en PDF
 - **PlateauUU6U9** : logiciel d'organisation de jeux et matchs pour les jeunes footballeurs
@@ -34,7 +33,7 @@ Ce site est un espace de partage autour de mes projets techniques.
 
 ## Me contacter
 
-📧 [adesse mail](mailto:ge.lerest@gmail.com)  
+📧 [adresse mail](mailto:ge.lerest@gmail.com)  
 💻 [mon GitHub](https://github.com/GerardLeRest)
 
 Merci de votre visite 

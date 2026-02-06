@@ -11,31 +11,7 @@ tags: [AppImage]
 
 - créer le dossier "PyCdCover-AppImage. Y enclure:
 
-- ### **Dossiers à inclure dans AppDir**
-  
-  | Dossier         | Pourquoi ?                                          |
-  | --------------- | --------------------------------------------------- |
-  | **Controleur/** | Contient le contrôleur du programme.                |
-  | **locales/**    | locales (langues)                                   |
-  | **Modele/**     | Contient les classes métier (PDF, gabarit…).        |
-  | **Vue/**        | Interface graphique PySide6.                        |
-  | **ressources/** | Images, templates, fichiers utilisés à l’exécution. |
-  
-  ### **📄 Fichiers à inclure**
-  
-  | Fichier              | Utilité                                              |
-  | -------------------- | ---------------------------------------------------- |
-  | **pycdcover.py**     | Script principal qui lance l’application.            |
-  | **pycdcover.png**    | Icône de l’application (pour l’AppImage).            |
-  | **LICENSE.md**       | Obligatoire dans un paquet si tu veux le distribuer. |
-  | **README.md**        | Recommandé mais pas obligatoire.                     |
-  | **requirements.txt** | liste des dépendances                                |
-  
-  | Fichier        | Utilité                                        |
-  | -------------- |:---------------------------------------------- |
-  | **install.sh** | script maison qui pilote toute la construction |
-  
-  REMARQUE - Important: pour Piveo, il ne faut pas intégrer les dossiers *.JSON, les .db, le dossier "fichiers.
+- ![piveo_tree](assets/img/piveo_tree.png)
   
   - Rendre exécutable "install.sh":
     
@@ -176,7 +152,7 @@ ARCH=$ARCH ./appimagetool-x86_64.AppImage "$APPDIR"
 echo "✅ AppImage générée : $APP-$ARCH.AppImage"
 ```
 
-## 5.2  Script "Install.sh - PyCDCover
+## 5.2  Script "Install.sh - Piveo
 
 ```bash
 #!/bin/bash
@@ -197,31 +173,26 @@ rm -f "$APP-$ARCH.AppImage"
 mkdir -p "$APPDIR/usr/bin"
 mkdir -p "$APPDIR/usr/lib/python3/site-packages"
 
-# 3) Copie du projet
-cp \
+# 3) Copie du projet (TOUT le code applicatif)
+cp -r \
+    app \
+    ressources \
+    locales \
     Piveo.pyw \
-    FenetrePrincipale.py \
-    ChoixOrganisme.py \
-    FrameGauche.py \
-    FrameDroiteHaute.py \
-    FrameDroiteBasse.py \
-    GestionLangue.py \
-    ModifierBDD.py \
-    utils.py \
-    utils_i18n.py \
+    piveo.png \
     "$APPDIR/"
-
-cp -r locales "$APPDIR/"
 
 # 4) Exécutable principal (POINT D’ENTRÉE UNIQUE)
 cat > "$APPDIR/usr/bin/piveo" <<'EOF'
 #!/bin/bash
 HERE="$(dirname "$(readlink -f "$0")")"
 
+# AppDir = deux niveaux au-dessus de usr/bin
 export PYTHONPATH="$HERE/../lib/python3/site-packages:$HERE/../.."
 
 exec python3 "$HERE/../../Piveo.pyw"
 EOF
+
 chmod +x "$APPDIR/usr/bin/piveo"
 
 # 5) AppRun
@@ -230,9 +201,10 @@ cat > "$APPDIR/AppRun" <<'EOF'
 HERE="$(dirname "$(readlink -f "$0")")"
 exec "$HERE/usr/bin/piveo"
 EOF
+
 chmod +x "$APPDIR/AppRun"
 
-# 6) Desktop
+# 6) Desktop file
 cat > "$APPDIR/Piveo.desktop" <<EOF
 [Desktop Entry]
 Type=Application
@@ -246,7 +218,7 @@ EOF
 # 7) Icône
 cp piveo.png "$APPDIR/"
 
-# 8) Dépendances Python
+# 8) Dépendances Python (PySide6)
 $PYTHON -m pip install PySide6 \
   --target "$APPDIR/usr/lib/python3/site-packages" \
   --break-system-packages \

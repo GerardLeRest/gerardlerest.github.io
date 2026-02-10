@@ -10,14 +10,28 @@ tags: [AppImage]
 # 1 Installation  (ex: PyCDCover)
 
 - créer le dossier "PyCdCover-AppImage. Y enclure:
+* controleur
 
-- ![piveo_tree](assets/img/piveo_tree.png)
+* locale
+
+* Modele
+
+* ressourecs
+
+* vues
+
+* pycdvover.png
+
+* Pycdcover.pyw
+
+* README.md
+
+* requirement.txt
+- Rendre exécutable "install.sh":
   
-  - Rendre exécutable "install.sh":
-    
-    ```bash
-    chmod +x install.sh
-    ```
+  ```bash
+  chmod +x install.sh
+  ```
 
 - exécuter "install.sh":
   
@@ -176,8 +190,8 @@ mkdir -p "$APPDIR/usr/lib/python3/site-packages"
 # 3) Copie du projet (TOUT le code applicatif)
 cp -r \
     app \
-    ressources \
     locales \
+    ressources \
     Piveo.pyw \
     piveo.png \
     "$APPDIR/"

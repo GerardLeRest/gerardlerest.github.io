@@ -15,7 +15,7 @@ tags: [exe, PyInstaller, Inno Setup]
 - ressources
 - icone.ico
 - pycdcover.pyw
-- pycdcover.iss
+- pycdcover.iss (voir fin du tutoriel)
 - requirements.txt
 
 # 2. fichiers exécutables créés avec pyinstaller
@@ -47,22 +47,23 @@ tags: [exe, PyInstaller, Inno Setup]
     --add-data "Modele;Modele" `
     pycdcover.pyw
   ```
+  
   ## 2.2 PyCDCover: dans le dossier Dist: **Piveo.exe**
 
 - cmd:
   
- - powershell:
+  - powershell:
   
   ```csharp
-  pyinstaller --onefile --windowed `
-  --name=Piveo `
-  --icon=piveo.ico `
-  --add-data "locales;locales" `
-  --add-data "piveo.ico;." `
-  Piveo.pyw
+  pyinstaller --noconsole --onefile --icon=piveo.ico ^
+  --add-data "ressources;ressources" ^
+  --add-data "app;app" ^
+  --add-data "locales;locales" ^
+  Piveo.pyw ^ 
   ```
-Il faut ajouter dans un même dossier les fichiers 3 JSON, les 3 fichiers db
-et le dossier "fichiers". Il faudra donc ensuite zipper ce dossier pour déployer les releases.
+  
+  Il faut ajouter dans un même dossier les fichiers 3 JSON, les 3 fichiers db
+  et le dossier "fichiers". Il faudra donc ensuite zipper ce dossier pour déployer les releases.
 
 # 3. Installateur Inno Setup - uniquement pour PyCDCover
 

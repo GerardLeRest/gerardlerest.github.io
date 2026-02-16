@@ -1,12 +1,12 @@
 ---
-title: Refactorer_python
+title: Refactorisation Python
 author: Gérard LE REST
 date: 2026-02-11 10:44:00 +0800
 categories: [Python, Tutoriel]
 tags: [sanke_case, CamelCase, Constante]
 ---
 
-# Refactorisation - Python
+# 
 
 ## 🎯 Objectif
 
@@ -29,6 +29,7 @@ En Python standard :
 - Classes → `CamelCase`
 - Constantes → `MA_CONSTANTE`
 - Attributs internes → `_mon_attribut`
+- noms de fichier → snake_case
 
 Exemple :
 

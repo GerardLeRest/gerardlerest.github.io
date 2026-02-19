@@ -22,20 +22,7 @@ tags: [exe, PyInstaller, Inno Setup]
 
 ## 2.1 PyCDCover: dans le dossier Dist: pycdcover.exe
 
-- cmd:
-  
-  ```nginx
-  pyinstaller --onefile --windowed ^
-    --icon=icone.ico ^
-    --add-data "ressources;ressources" ^
-    --add-data "Vue;Vue" ^
-    --add-data "Controleur;Controleur" ^
-    --add-data "locales;locales" ^
-    --add-data "Modele;Modele" ^
-    pycdcover.pyw
-  ```
-
-- powershell:
+- powershell (vscode)
   
   ```csharp
   pyinstaller --onefile --windowed `
@@ -49,18 +36,16 @@ tags: [exe, PyInstaller, Inno Setup]
   ```
   
   ## 2.2 PyCDCover: dans le dossier Dist: **Piveo.exe**
-
-- cmd:
   
-  - powershell:
-  
-  ```csharp
-  pyinstaller --noconsole --onefile --icon=piveo.ico ^
-  --add-data "ressources;ressources" ^
-  --add-data "app;app" ^
-  --add-data "locales;locales" ^
-  Piveo.pyw ^ 
-  ```
+  - powershell (vscode)
+    
+    ```csharp
+    pyinstaller --clean --noconsole --onefile --icon=piveo.ico `
+    --add-data "ressources;ressources" `
+    --add-data "app;app" `
+    --add-data "locales;locales" `
+    Piveo.pyw
+    ```
   
   Il faut ajouter dans un même dossier les fichiers 3 JSON, les 3 fichiers db
   et le dossier "fichiers". Il faudra donc ensuite zipper ce dossier pour déployer les releases.

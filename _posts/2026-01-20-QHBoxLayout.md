@@ -2,7 +2,7 @@
 title: Le QHBoxLayout
 author: Gérard LE REST
 date: 2026-01-20 18:13:00 +0800
-categories: [Pyside6, Cours]
+categories: [Pyside6, Python, Cours]
 tags: [Label, Fenêtre]
 
 ---

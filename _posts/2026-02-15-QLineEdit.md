@@ -2,7 +2,7 @@
 title: QLineEdit
 author: Gérard LE REST
 date: 2026-02-15 19:00:00 +0800
-categories: [Pyside6, Cours]
+categories: [Pyside6, Python, Cours]
 tags: [QLineEdit]
 ---
 

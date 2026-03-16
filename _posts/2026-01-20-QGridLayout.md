@@ -2,7 +2,7 @@
 title: QGridLayout
 author: Gerard LE REST
 date: 2026-01-20 18:30:00 +0800
-categories: [Pyside6, Cours]
+categories: [Pyside6, Python, Cours]
 tags: [QGridLayout]
 
 ---

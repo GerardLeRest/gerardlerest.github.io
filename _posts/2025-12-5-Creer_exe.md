@@ -18,9 +18,11 @@ tags: [exe, PyInstaller, Inno Setup]
 - pycdcover.iss (voir fin du tutoriel)
 - requirements.txt
 
+
+
 # 2. fichiers exécutables créés avec pyinstaller
 
-## 2.1 PyCDCover: dans le dossier Dist: pycdcover.exe
+## 2.1 PyCDCover
 
 - powershell (vscode)
   
@@ -34,21 +36,25 @@ tags: [exe, PyInstaller, Inno Setup]
     --add-data "Modele;Modele" `
     pycdcover.pyw
   ```
+on retrouvera l'exécutable dans le dossier "dist": pycdcover.exe.
+On peut alors utiliser Inno Setup (voir 3.2)
   
   ## 2.2 PyCDCover: dans le dossier Dist: **Piveo.exe**
   
   - powershell (vscode)
     
     ```csharp
-    pyinstaller --clean --noconsole --onefile --icon=piveo.ico `
-    --add-data "ressources;ressources" `
-    --add-data "app;app" `
-    --add-data "locales;locales" `
-    Piveo.pyw
+    pyinstaller --onefile --windowed `
+      --icon=piveo.ico `
+      --add-data "ressources;ressources" `
+      --add-data "Vue;Vue" `
+      --add-data "Controleur;Controleur" `
+      --add-data "locales;locales" `
+      --add-data "Modele;Modele" `
+      piveo.pyw
     ```
-  
-  Il faut ajouter dans un même dossier les fichiers 3 JSON, les 3 fichiers db
-  et le dossier "fichiers". Il faudra donc ensuite zipper ce dossier pour déployer les releases.
+  on retrouvera l'exécutable dans le dossier "dist": pycdcover.exe
+  On peut alors utiliser Inno Setup (voir 3.3)
 
 # 3. Installateur Inno Setup - uniquement pour PyCDCover
 
@@ -59,7 +65,9 @@ Le fichier exe d'InnoSetup se retrouve dans le dossier "installer". Il s'appelle
 Cliquer sur Built. 
 Cliquer sur Run et suivre les instructions.
 
-# 3.2 fichier Inno Setup (fichier: pycdcover.iss)
+
+
+# 3.2 fichier Inno Setup (fichier: pycdcover.iss) - PycdCover
 
 ```ini
 ; -- pycdcover.iss --
@@ -105,4 +113,50 @@ Name: "desktopicon"; Description: "Créer une icône sur le bureau"; GroupDescri
 
 [Run]
 Filename: "{app}\pycdcover.exe"; Description: "Lancer PyCDCover"; Flags: nowait postinstall skipifsilent
+```
+# 3.3 fichier Inno Setup (fichier: pycdcover.iss) - Piveo
+``Ìnno Setup
+; -- piveo.iss --
+; Script Inno Setup pour Piveo
+
+[Setup]
+AppName=Piveo
+AppVersion=2.3.0
+AppPublisher=Gérard LE REST
+AppPublisherURL=https://github.com/gerardlerest
+AppSupportURL=https://github.com/gerardlerest
+AppUpdatesURL=https://github.com/gerardlerest
+
+DefaultDirName={autopf}\Piveo
+DefaultGroupName=Piveo
+OutputDir=installer
+OutputBaseFilename=Piveo_Setup
+Compression=lzma
+SolidCompression=yes
+
+; Icône de l’installateur (facultatif)
+; SetupIconFile=icon.ico
+
+[Languages]
+Name: "french"; MessagesFile: "compiler:Languages\French.isl"
+
+[Files]
+; Exécutable principal
+Source: "dist\piveo.exe"; DestDir: "{app}"; Flags: ignoreversion
+
+; Tous les fichiers générés par PyInstaller
+Source: "dist\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs ignoreversion
+
+[Icons]
+; Raccourci menu démarrer
+Name: "{group}\Piveo"; Filename: "{app}\piveo.exe"
+
+; Raccourci bureau
+Name: "{commondesktop}\Piveo"; Filename: "{app}\piveo.exe"; Tasks: desktopicon
+
+[Tasks]
+Name: "desktopicon"; Description: "Créer une icône sur le bureau"; GroupDescription: "Options supplémentaires"
+
+[Run]
+Filename: "{app}\piveo.exe"; Description: "Lancer Piveo"; Flags: nowait postinstall skipifsilent
 ```

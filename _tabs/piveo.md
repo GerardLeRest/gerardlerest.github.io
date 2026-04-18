@@ -63,6 +63,6 @@ La prochaine étape consistera à créer un système MVC pour une lecture plus l
 
 # 6. liens
 
-[Github - Piveo](https://github.com/GerardLeRest/Piveo) <br>
-[téléchargement - Piveo](https://github.com/GerardLeRest/Piveo/releases) <br>
+[Github - Piveo](https://github.com/GerardLeRest/Piveo-v2) <br>
+[téléchargement - Piveo](https://github.com/GerardLeRest/Piveo-v2/releases) <br>
 [wiki ubuntu-fr - piveo](https://doc.ubuntu-fr.org/piveo)

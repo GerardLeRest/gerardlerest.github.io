@@ -17,7 +17,7 @@ Le projet est composé de trois applications :
 
 - une application mobile pour les médecins. 
 
-![chirugien](assets/img/soignemoi-chirurgiens.png)
+![chirugien](../assets/img/soignemoi-chirurgiens.png)
 
 ## 1. Le site internet "SoigneMoi"
 
@@ -64,9 +64,11 @@ Langages: PHP, HTML, Twig, CSS, MySQL
 
 Frameworks : Slim, Symfony
 
-### Page d’accueil
+### Exemple d'une page web du site
 
-![Site web](assets/img/soignemoi-site_web.png)
+![Site web](../assets/img/soignemoi-site_web.png)
+* cliquer pour agrandir * 
+
 
 ### Conclusion
 
@@ -108,7 +110,7 @@ python, json, pyside6, pillow, Mysql, traitement de fichiers
 
 ### vue des interfaces
 
-![Secretariat](assets/img/soignemoi-secretariat.png)
+![Secretariat](../assets/img/soignemoi-secretariat.png)
 
 ## 3. Application "Medecin"
 
@@ -172,13 +174,14 @@ Java pour Android, MySQL
 
 ### Vues des trois pages de l'application
 
-![medecin](assets/img/soignemoi-medecin.png)
+![medecin](../assets/img/soignemoi-medecin.png)
 
 ### Conclusion
 
 Android pour java est assez facile à prendre en mains. La partie réseau est tout même complexe avec des outils de dépannage pas forcément convaincant. Mais le rendu final est plutôt satisfaisant.
 
 ## 4. Liens
+
 github: [Soignemoi-Symfony](https://github.com/GerardLeRest/soignemoi-symfony) <br>
 site internet: [soignemoi.net](https://www.soignemoi.net)
 

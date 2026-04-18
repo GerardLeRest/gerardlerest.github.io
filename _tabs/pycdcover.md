@@ -8,22 +8,22 @@ order: 7
 
 ## 1. Présentation de PyCDCover
 
-PyCDCover est un générateur de jaquettes:
+PyCDCover est un générateur de jaquettes (pochettes):
 
 - pour des maquettes d'albums (un album par CD)
 
 - pour des CD multi-albums (plusieurs albums par CD)
   
-  Il est également possible de travailler directement avec des dossiers de fichiers musicaux 
+  Il est préférable de travailler directement avec des dossiers de fichiers musicaux 
 
 ## 2. Interface
 
-![PyCDCover](assets/img/pycdcover-interface.png)
+![PyCDCover](../assets/img/pycdcover-interface.png)
 
 ## 3. Fonctionnement du logiciel
 
-Avant d'utiliser le CD, il faut taguer les chansons, soit dans celles du dossier ou soit dans celles du CD. On peut utiliser Easytag, par exemple. Sans ces informations (artist, album, année, genre, titres), le logiciels ne pourra pas traiter ces informations nécessaires.
-Les tags récupérés, le nom de l'artistes et de l'album permettent de récpérer depuis des sites internet la photo de la jaquette.
+Avant d'utiliser le CD, il faut taguer les chansons du dossier (éviter celui du CD). On peut utiliser Easytag, par exemple. Sans ces informations (artist, album, année, genre, titres), le logiciels ne pourra pas traiter ces informations nécessaires.
+Les tags récupérés, le nom des artistes et des albums permettent de récupérer depuis des sites internet les photos de la jaquette (pochette).
 
 Sur le logiciel, de la gauche vers la droite, il faut appuyer sur:
 
@@ -31,23 +31,20 @@ Sur le logiciel, de la gauche vers la droite, il faut appuyer sur:
 
 2. Récupérer les tags du dossier ou du CD
 
-3. Éditer et/ou modifier les valeus des tags
+3. Éditer et/ou modifier les valeurs des tags
 
-4. Récupérer les images à partir de Itunes ou Musicbrainz
+4. Récupérer les images à partir de Itunes
 
-5. Créer les faces avant et arrières du CD
+5. Sélectionner la couleur de fond
 
-6. Générer le PDF
-- cette maquette a été faite avec l'accord du groupe
-  @CENT DÉTRESSES
-  
-  ![maquette 1 CD](assets/img/pycdcover-maquette.png)
-  *Jaquette - un album*
+6. Créer les faces avant et arrières du CD
 
-- Cette jaquette multi-album présente les images en petit format, à but démonstratif et non lucratif.
-  
-  ![maquette multi-CD](assets/img/pycdcover-multi-albums.png)
-  *Jaquette multi-album*
+7. Générer le PDF
+
+Ci-dessous trois exemples de résultats. la maquette unique a été faite avec l'accord du groupe @CENT DÉTRESSES -  Cliquer sur l'image pour l'agrandir.
+
+<img title="" src="../assets/img/pycdcover-multi-albums.png" alt="maquette multi-CD" width="724">
+*Exemple de Jaquettes (pochettes) de CD*
 
 ## 4. Un peu de code
 
@@ -89,11 +86,12 @@ Python 3, PySide6, Reportlab
 
 ## 5. Conclusion
 
-PyCDCOver a été le deuxième logiciel conséquent que j'ai créé. Son interface était trop sommaire pour qu'il fut beaucoup utilisé. Mais il était référencé, donc
-je ne sais pas vraiment qu'est-ce qu'il en est. Pyside6m'a permis d"améiorer plus robuste en uilisant la technologie MVC et une interface plus attrayante, même
-si la nouvelle interface est perfectible.
+PyCDCOver a été le deuxième logiciel conséquent que j'ai créé. Son interface était trop sommaire pour qu'il fut très utilisé. Mais il était référencé, donc
+téléchargé (des dizaines de milliers de vues). Pyside6 m'a permis d"améiorer plus la robuste du programme en uilisant la technologie MVC. Une interface plus attrayante a été concçue, plus aérée plus plus belle et ergonomique
 
 ## 6. liens
 
 [Téléchargement - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2/releases) <br>
 [Github - PyCDCover](https://github.com/GerardLeRest/pycdcover-v2)
+<br>
+[page Wiki - Ubuntu-fr](https://doc.ubuntu-fr.org/pycdcover)

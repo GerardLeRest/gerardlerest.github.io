@@ -189,9 +189,11 @@ mkdir -p "$APPDIR/usr/lib/python3/site-packages"
 
 # 3) Copie du projet (TOUT le code applicatif)
 cp -r \
-    app \
+    controleur \
     locales \
+    modeles\
     ressources \
+    vues \
     Piveo.pyw \
     piveo.png \
     "$APPDIR/"

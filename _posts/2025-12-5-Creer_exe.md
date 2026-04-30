@@ -50,7 +50,7 @@ tags: [exe, PyInstaller, Inno Setup]
     --add-data "Controleur;Controleur" `
     --add-data "locales;locales" `
     --add-data "Modele;Modele" `
-  	piveo.py
+      piveo.py
     ```
     
     on retrouvera l'exécutable dans le dossier "dist": pycdcover.exe
@@ -67,7 +67,7 @@ Cliquer sur Run et suivre les instructions.
 
 # 3.2 fichier Inno Setup (fichier: pycdcover.iss) - PycdCover
 
-```ini
+```Inno
 ; -- pycdcover.iss --
 ; Script Inno Setup pour PyCDCover
 
@@ -115,7 +115,7 @@ Filename: "{app}\pycdcover.exe"; Description: "Lancer PyCDCover"; Flags: nowait 
 
 # 3.3 fichier Inno Setup (fichier: pycdcover.iss) - Piveo
 
-``Ìnno Setup
+```Ìnno
 ; -- piveo.iss --
 ; Script Inno Setup pour Piveo
 
@@ -159,7 +159,4 @@ Name: "desktopicon"; Description: "Créer une icône sur le bureau"; GroupDescri
 
 [Run]
 Filename: "{app}\piveo.exe"; Description: "Lancer Piveo"; Flags: nowait postinstall skipifsilent
-
-```
-
 ```

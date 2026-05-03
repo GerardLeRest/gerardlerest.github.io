@@ -67,8 +67,8 @@ Frameworks : Slim, Symfony
 ### Exemple d'une page web du site
 
 ![Site web](../assets/img/soignemoi-site_web.png)
-* cliquer pour agrandir * 
 
+* cliquer pour agrandir * 
 
 ### Conclusion
 

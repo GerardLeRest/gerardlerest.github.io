@@ -14,9 +14,8 @@ tags: [exe, PyInstaller, Inno Setup]
 - Modele
 - ressources
 - icone.ico
-- pycdcover.pyw
+- pycdcover.py
 - pycdcover.iss (voir fin du tutoriel)
-- requirements.txt
 
 # 2. fichiers exécutables créés avec pyinstaller
 
@@ -38,7 +37,7 @@ tags: [exe, PyInstaller, Inno Setup]
   on retrouvera l'exécutable dans le dossier "dist": pycdcover.exe.
   On peut alors utiliser Inno Setup (voir 3.2)
   
-  ## 2.2 PyCDCover: dans le dossier Dist: **Piveo.exe**
+  ## 2.2 Piveo - dans le dossier Dist: **Piveo.exe**
   
   - powershell (vscode)
     

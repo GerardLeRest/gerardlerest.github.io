@@ -10,23 +10,21 @@ tags: [AppImage]
 # 1 Installation  (ex: PyCDCover)
 
 - créer le dossier "PyCdCover-AppImage. Y enclure:
-* controleur
 
-* locale
+controleur
 
-* Modele
+locale
 
-* ressourecs
+modele
 
-* vues
+ressourecs
 
-* pycdvover.png
+vues
 
-* Pycdcover.pyw
+pycdvover.png
 
-* README.md
+Pycdcover.py
 
-* requirement.txt
 - Rendre exécutable "install.sh":
   
   ```bash
@@ -65,7 +63,7 @@ tags: [AppImage]
   sudo chmod +x /opt/PyCDCover/PyCDCover-x86_64.AppImage
   ```
 
-# Alacarte
+# 3 Alacarte
 
 Alacarte permet de créer un exécutable sur les bureaux GNU/Linux
 
@@ -194,7 +192,7 @@ cp -r \
     modeles\
     ressources \
     vues \
-    Piveo.pyw \
+    Piveo.py \
     piveo.png \
     "$APPDIR/"
 

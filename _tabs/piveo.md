@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 
-title: Projet: Piveo - Apprendre les prénoms et noms gratuitement
+title: " Piveo - Apprendre les noms et prénoms gratuitement"
 icon: fas fa-wrench
 order: 6
 

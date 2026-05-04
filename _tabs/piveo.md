@@ -1,31 +1,34 @@
 ---
 # the default layout is 'page'
 
-title: Piveo - Apprendre les noms et prénoms gratuitement
+title: Piveo
 icon: fas fa-wrench
 order: 6
 
 ---
 
+Application libre et gratuite destinée aux enseignants, entreprises ou organisations souhaitant mémoriser rapidement les noms et prénoms.
+
 ## 1. Présentation de Piveo
 
-J'a toujours eu des difficultés à mémoriser les prénoms et les noms de mes élèves. Je me suis dit qu'une application pourrait m'aider mais aussi mes collègues.
+J’ai toujours eu des difficultés à mémoriser les prénoms et les noms de mes élèves.  
+Je me suis dit qu’une application pourrait m’aider, mais aussi aider mes collègues.
+
+---
 
 ## 2. Présentation
 
 ![Accueil](assets/img/piveo-accueil.png)
 
-Le logiciel Piveo s'utilise ainsi:
+Le logiciel Piveo s’utilise ainsi :
 
-- On sélectionne l'orgnisme que l'on souhaite (voir ci-dessus)
+- On sélectionne l’organisme souhaité (voir ci-dessus)
+- Puis on choisit le groupe à l’aide des combobox (ici : departement et fonctions)
+- On sélectionne ensuite le mode de mémorisation (apprentissage, mode oral,  écrit). Un mode aléatoire est sélectionnable.
+- La partie de gauche permet de faire défiler les élèves tout en affichant leurs informations
+- Un mode de recherche permet de retrouver un ou plusieurs élèves à partir de leur nom ou prénom
 
-- Puis on choisit le groupe avec les combobox (ici: Classe et Options) - voir ci-dessous
-
-- on sectionne ensuite le mode de mémorisation (apprentissage, par mode orale ou écrit
-
-- La partie de gauche permet de faire défiler les élèves tout en donnant leurs informations
-
-- Un mode de recherche permet de retrouver un(des) élèves suivant leurs noms/prénoms
+Pour plus d'information cliquer sur les liens ci-dessous
 
 ![interface](assets/img/piveo-interface.png)
 *interfcae de l'application*
@@ -54,12 +57,20 @@ def configRechercher(self) -> None:
 
 ## 4. Technologie
 
-Python, SQLite, Tkinter
+- Python,
+
+- SQLite
+
+- Tkinter
+
+- PySide6
 
 ## 5. Conclusion
 
-Le programme fonctionne parfaitement, L'interface a été retravaillée avec Pyside6.
-La prochaine étape consistera à créer un système MVC pour une lecture plus lisible.
+Le programme est fonctionnel et stable.  
+L’interface a été retravaillée avec PySide6.
+
+La version 2 met en place une architecture de type MVC afin d’améliorer la lisibilité et la maintenance du code, ainsi qu’une interface améliorée.
 
 # 6. liens
 

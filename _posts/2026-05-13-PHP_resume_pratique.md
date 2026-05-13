@@ -1,26 +1,27 @@
 ---
 title: PHP – Résumé pratique
 author: Gérard LE REST
-date: 2025-05-13 11:30:00 +0800
+date: 2026-05-13 11:30:00 +0800
 categories: [PHP, Cours]
 tags: [PHP, Backend]
 ---
 
-# 📄 PHP – Résumé pratique (usage courant)
+# 📄 PHP – Résumé pratique (bases du langage)
 
 ## 🔹 Qu’est-ce que PHP ?
 
-**PHP** est un langage principalement utilisé pour :
+PHP est un langage de programmation.
 
-- les sites web dynamiques
-- les formulaires
-- les bases de données
-- les API
-- le back-end
+Il permet notamment de :
 
-➡️ Très utilisé sur le web  
-➡️ Intégré facilement avec HTML  
-➡️ Simple pour débuter
+- manipuler des données
+- utiliser des tableaux
+- créer des fonctions
+- programmer en objet
+- automatiser des traitements
+
+➡️ PHP est simple pour débuter  
+➡️ Très utilisé dans le développement back-end
 
 ---
 
@@ -134,17 +135,42 @@ echo $couleurs[0];
 
 ---
 
-# 🔹 Foreach
+# 🔹 Ajouter un élément dans un tableau
+
+```php
+<?php
+
+$couleurs = ["rouge", "vert"];
+
+$couleurs[] = "bleu";
+
+print_r($couleurs);
+```
+
+---
+
+# 🔹 Retirer un élément d’un tableau
 
 ```php
 <?php
 
 $couleurs = ["rouge", "vert", "bleu"];
 
-foreach ($couleurs as $couleur) {
+unset($couleurs[1]);
 
-    echo $couleur;
-}
+print_r($couleurs);
+```
+
+---
+
+# 🔹 Nombre d’éléments d’un tableau
+
+```php
+<?php
+
+$couleurs = ["rouge", "vert", "bleu"];
+
+echo count($couleurs);
 ```
 
 ---
@@ -161,6 +187,75 @@ $personne = [
 ];
 
 echo $personne["nom"];
+```
+
+---
+
+# 🔹 Ajouter une valeur dans un tableau associatif
+
+```php
+<?php
+
+$personne = [
+
+    "nom" => "LE REST"
+];
+
+$personne["prenom"] = "Gérard";
+
+print_r($personne);
+```
+
+---
+
+# 🔹 Modifier une valeur
+
+```php
+<?php
+
+$personne = [
+
+    "nom" => "LE REST"
+];
+
+$personne["nom"] = "DUPONT";
+
+print_r($personne);
+```
+
+---
+
+# 🔹 Retirer une valeur
+
+```php
+<?php
+
+$personne = [
+
+    "nom" => "LE REST",
+    "prenom" => "Gérard"
+];
+
+unset($personne["prenom"]);
+
+print_r($personne);
+```
+
+➡️ `unset()` permet de supprimer une clé du tableau associatif.
+
+---
+
+# 🔹 Foreach
+
+```php
+<?php
+
+$couleurs = ["rouge", "vert", "bleu"];
+
+foreach ($couleurs as $couleur) {
+
+    echo $couleur;
+}
 ```
 
 ---
@@ -201,154 +296,6 @@ function addition(int $a, int $b): int {
 <?php
 
 require "fonctions.php";
-```
-
----
-
-# 🔹 GET
-
-La méthode **GET** permet d’envoyer des données dans l’URL.
-
-Exemple :
-
-```text
-http://localhost/test.php?nom=Dupont
-```
-
----
-
-# 🔹 Récupération GET
-
-```php
-<?php
-
-$nom = $_GET["nom"];
-
-echo $nom;
-```
-
----
-
-# 🔹 POST
-
-La méthode **POST** permet d’envoyer des données de formulaire.
-
----
-
-# 🔹 Formulaire HTML
-
-```html
-<form method="POST">
-
-    <input type="text" name="nom">
-
-    <button type="submit">
-        Valider
-    </button>
-
-</form>
-```
-
----
-
-# 🔹 Récupération POST
-
-```php
-<?php
-
-$nom = $_POST["nom"];
-
-echo $nom;
-```
-
----
-
-# 🔹 Sécurisation minimale
-
-```php
-<?php
-
-$nom = htmlspecialchars($_POST["nom"]);
-```
-
-➡️ Évite l’injection HTML ou JavaScript.
-
----
-
-# 🔹 Session
-
-```php
-<?php
-
-session_start();
-
-$_SESSION["nom"] = "Gérard";
-```
-
----
-
-# 🔹 PDO – Connexion MySQL
-
-```php
-<?php
-
-$pdo = new PDO(
-
-    "mysql:host=localhost;dbname=test;charset=utf8",
-    "root",
-    ""
-);
-```
-
----
-
-# 🔹 SELECT
-
-```php
-<?php
-
-$requete = $pdo->query(
-
-    "SELECT * FROM patient"
-);
-
-$patients = $requete->fetchAll();
-```
-
----
-
-# 🔹 Requête préparée
-
-```php
-<?php
-
-$requete = $pdo->prepare(
-
-    "SELECT * FROM patient
-    WHERE nom = ?"
-);
-
-$requete->execute([$nom]);
-
-$patient = $requete->fetch();
-```
-
-➡️ Protection contre les injections SQL.
-
----
-
-# 🔹 INSERT
-
-```php
-<?php
-
-$requete = $pdo->prepare(
-
-    "INSERT INTO patient(nom)
-    VALUES(?)"
-);
-
-$requete->execute([$nom]);
 ```
 
 ---
@@ -476,38 +423,17 @@ use App\Entity\Patient;
 
 ---
 
-# 🔹 Symfony et GET / POST
-
-Avec Symfony, on utilise généralement l’objet `Request`.
-
-GET :
-
-```php
-$id = $request->query->get("id");
-```
-
-POST :
-
-```php
-$nom = $request->request->get("nom");
-```
-
-➡️ Symfony simplifie la manipulation des requêtes HTTP.
-
----
-
 # 🔹 À retenir
 
-> PHP est surtout un langage de logique serveur.
+Le plus important en PHP :
 
-Le plus important :
-
+- variables
+- conditions
+- boucles
 - tableaux
 - fonctions
-- GET / POST
-- PDO
-- objet
+- programmation objet
+- héritage
 - interfaces
-- code simple et lisible
 
-Le reste viendra naturellement avec les projets.
+➡️ Le web, les formulaires, PDO et Symfony viendront ensuite.

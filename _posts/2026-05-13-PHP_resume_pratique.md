@@ -52,13 +52,13 @@ echo $nom;
 
 # 🔹 Types courants
 
-| PHP | Description |
-| --- | --- |
-| string | texte |
-| int | entier |
-| float | nombre décimal |
-| bool | vrai / faux |
-| array | tableau |
+| PHP    | Description    |
+| ------ | -------------- |
+| string | texte          |
+| int    | entier         |
+| float  | nombre décimal |
+| bool   | vrai / faux    |
+| array  | tableau        |
 
 ---
 
@@ -74,7 +74,7 @@ echo "Bonjour " . $nom;
 
 ---
 
-# 🔹 Conditions
+# 🔹 Conditions (if...else if...else)
 
 ```php
 <?php
@@ -364,14 +364,33 @@ class Patient {
 ```php
 <?php
 
+<?php
+
 class Personne {
 
     public string $nom;
+
+    // Constructeur de la classe parent
+    public function __construct(string $nom) {
+
+        $this->nom = $nom;
+    }
 }
 
 class Patient extends Personne {
 
+    // Constructeur de la classe enfant
+    public function __construct(string $nom) {
+
+        // Appel du constructeur parent
+        parent::__construct($nom);
+    }
 }
+
+// Création d'un patient
+$patient = new Patient("Dupont");
+
+echo $patient->nom;
 ```
 
 ---

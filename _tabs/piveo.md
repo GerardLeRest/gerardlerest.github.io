@@ -7,7 +7,7 @@ order: 6
 
 ---
 
-Application libre et gratuite destinée aux enseignants, entreprises ou organisations souhaitant mémoriser rapidement les noms et prénoms.
+"**Piveo** est une application **libre et gratuite** conçue pour aider les enseignants et les entreprises à apprendre et mémoriser rapidement les noms et les prénoms."
 
 ## 1. Présentation de Piveo
 
@@ -16,9 +16,9 @@ Je me suis dit qu’une application pourrait m’aider, mais aussi aider mes col
 
 ---
 
-## 2. Présentation
+## 2. Comment utiliser Piveo pour apprendre les prénoms ?
 
-![Accueil](assets/img/piveo-accueil.png)
+![Logiciel apprendre noms prénoms - Accueil](assets/img/piveo-accueil.png)
 
 Le logiciel Piveo s’utilise ainsi :
 
@@ -65,7 +65,7 @@ def configRechercher(self) -> None:
 
 - PySide6
 
-## 5. Conclusion
+## 5. Un logiciel libre pour l'éducation et les entreprises
 
 Le programme est fonctionnel et stable.  
 L’interface a été retravaillée avec PySide6.

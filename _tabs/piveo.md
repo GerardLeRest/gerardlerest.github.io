@@ -76,5 +76,5 @@ La version 2 met en place une architecture de type MVC afin d’améliorer la li
 
 [Github - Piveo](https://github.com/GerardLeRest/Piveo-v2) <br>
 [téléchargement - Piveo](https://github.com/GerardLeRest/Piveo-v2/releases) <br>
-[wiki ubuntu-fr - piveo](https://doc.ubuntu-fr.org/piveo)
+[wiki ubuntu-fr - piveo ](https://doc.ubuntu-fr.org/piveo) <br>
 [journal LinuxFr](https://linuxfr.org/users/clisam/journaux/piveo-2-4-0-logiciel-d-apprentissage-de-prenoms-et-noms)

@@ -8,11 +8,11 @@ order: 7
 
 ## 1. Présentation de PyCDCover
 
-PyCDCover est un générateur de jaquettes (pochettes):
+**PyCDCover est un générateur de jaquettes** (pochettes):
 
-- pour des maquettes d'albums (un album par CD)
+- pour des **maquettes d'albums** (un album par CD)
 
-- pour des CD multi-albums (plusieurs albums par CD)
+- pour des **CD multi-albums** (plusieurs albums par CD)
   
   Il est préférable de travailler directement avec des dossiers de fichiers musicaux 
 
@@ -27,19 +27,19 @@ Les tags récupérés, le nom des artistes et des albums permettent de récupér
 
 Sur le logiciel, de la gauche vers la droite, il faut appuyer sur:
 
-1. Donner un nom au CD. Pour une maquette - 1 album), il faut donner le nom de l'ariste à ce titre.
+1. **Donner un nom au CD**. Pour une maquette - 1 album, il faut donner le nom de l'ariste à ce titre.
 
-2. Récupérer les tags du dossier ou du CD
+2. **Récupérer les tags** du dossier ou du CD
 
-3. Éditer et/ou modifier les valeurs des tags
+3. **Éditer et/ou modifier les valeurs des tags**
 
-4. Récupérer les images à partir de Itunes
+4. **Récupérer les images** à partir de Itunes
 
-5. Sélectionner la couleur de fond
+5. **Sélectionner la couleur de fond**
 
-6. Créer les faces avant et arrières du CD
+6. **Créer les faces avant et arrières** du CD
 
-7. Générer le PDF
+7. **Générer le PDF**
 
 Ci-dessous trois exemples de résultats. la maquette unique a été faite avec l'accord du groupe @CENT DÉTRESSES -  Cliquer sur l'image pour l'agrandir.
 

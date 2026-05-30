@@ -7,7 +7,7 @@ order: 6
 
 ---
 
-"**Piveo** est une application **libre et gratuite** conçue pour aider les enseignants et les entreprises à apprendre et mémoriser rapidement les noms et les prénoms."
+"**Piveo** est une application **libre et gratuite** conçue pour aider les enseignants et les entreprises à **apprendre et mémoriser rapidement les noms et les prénoms.**"
 
 ## 1. Présentation de Piveo
 
@@ -22,11 +22,11 @@ Je me suis dit qu’une application pourrait m’aider, mais aussi aider mes col
 
 Le logiciel Piveo s’utilise ainsi :
 
-- On sélectionne l’organisme souhaité (voir ci-dessus)
-- Puis on choisit le groupe à l’aide des combobox (ici : departement et fonctions)
-- On sélectionne ensuite le mode de mémorisation (apprentissage, mode oral,  écrit). Un mode aléatoire est sélectionnable.
-- La partie de gauche permet de faire défiler les élèves tout en affichant leurs informations
-- Un mode de recherche permet de retrouver un ou plusieurs élèves à partir de leur nom ou prénom
+- On **sélectionne l’organisme** souhaité (voir ci-dessus)
+- Puis on **choisit le groupe à l’aide des combobox** (ici : departement et fonctions)
+- On **sélectionne ensuite le mode de mémorisation** (apprentissage, mode oral,  écrit). Un mode aléatoire est sélectionnable.
+- La **partie de gauche** permet de faire **défiler les élèves** tout en affichant leurs informations
+- Un **mode de recherche** permet de retrouver un ou plusieurs élèves à partir de leur nom ou prénom
 
 Pour plus d'information cliquer sur les liens ci-dessous
 

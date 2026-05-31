@@ -1,7 +1,7 @@
 ---
 title: Comment ajouter un label
 author: Gérard LE REST
-date: 2026-01-20 15:27:00 +0800
+date: 2026-01-20 02:00:00 +0800
 categories: [Pyside6, Python, Cours]
 tags: [Label, Fenêtre]
 

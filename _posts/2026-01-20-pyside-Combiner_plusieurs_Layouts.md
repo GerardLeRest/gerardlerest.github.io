@@ -1,7 +1,7 @@
 ---
 title: Combiner plusieurs Layouts
 author: Gérard LE REST
-date: 2026-01-20 17:52:00 +0800
+date: 2026-01-20 07:52:00 +0800
 categories: [Pyside6, Python, Cours]
 tags: [Label, Fenêtre]
 

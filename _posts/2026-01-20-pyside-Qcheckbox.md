@@ -1,7 +1,7 @@
 ---
 title: Les QCheckBox
 author: Gérard LE REST
-date: 2026-03-16 14:00:00 +0800
+date: 2026-01-20 09:00:00 +0800
 categories: [Pyside6, Python, Cours]
 tags: [QCheckBox]
 ---

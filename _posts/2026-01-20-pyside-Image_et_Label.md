@@ -1,7 +1,7 @@
 ---
 title: Image et Label
 author: Gérard LE REST
-date: 2026-01-20 17:47:00 +0800
+date: 2026-01-20 04:47:00 +0800
 categories: [Pyside6, Python, Cours]
 tags: [Label, Image]
 ---

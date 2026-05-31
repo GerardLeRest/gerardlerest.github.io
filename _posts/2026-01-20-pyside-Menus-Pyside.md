@@ -1,7 +1,7 @@
 ---
 title: Les menus Pyside6
 author: Gérard LE REST
-date: 2025-12-28 18:49:00 +0800
+date: 2026-01-20 10:49:00 +0800
 categories: [Pyside6, Python, Cours]
 tags: [menus]
 ---

@@ -183,32 +183,6 @@ Fiche du patient
 
 ---
 
-## Exemple inspiré de SoigneMoi
-
-Imaginons :
-
-```php
-public function enregistrerSejour()
-{
-    ...
-}
-```
-
-Après la sauvegarde du séjour :
-
-```php
-return $this->redirectToRoute(
-    'patient_show',
-    [
-        'id' => $patient->getId()
-    ]
-);
-```
-
-L'utilisateur revient automatiquement sur la fiche du patient.
-
----
-
 ## Pourquoi utiliser une redirection ?
 
 Sans redirection :
@@ -237,27 +211,6 @@ Le risque de double enregistrement est réduit.
 
 ---
 
-## Ce que Symfony fait automatiquement
-
-Symfony :
-
-- génère l'URL ;
-- crée une réponse de redirection ;
-- informe le navigateur ;
-- déclenche une nouvelle requête.
-
----
-
-## Ce que le développeur écrit
-
-Le développeur choisit :
-
-- la route cible ;
-- les paramètres éventuels ;
-- le moment de la redirection.
-
----
-
 ## À retenir
 
 Une redirection :
@@ -276,54 +229,6 @@ Redirection
 Nouvelle URL
  ↓
 Nouvelle page
-```
-
----
-
-## Erreurs fréquentes
-
-### Utiliser une URL en dur
-
-Moins bien :
-
-```php
-return $this->redirect('/patient/25');
-```
-
-Mieux :
-
-```php
-return $this->redirectToRoute(
-    'patient_show',
-    ['id' => 25]
-);
-```
-
----
-
-### Oublier les paramètres
-
-Route :
-
-```php
-#[Route('/patient/{id}')]
-```
-
-Incorrect :
-
-```php
-return $this->redirectToRoute(
-    'patient_show'
-);
-```
-
-Correct :
-
-```php
-return $this->redirectToRoute(
-    'patient_show',
-    ['id' => 25]
-);
 ```
 
 ---

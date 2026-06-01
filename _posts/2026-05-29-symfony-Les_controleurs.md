@@ -39,7 +39,6 @@ Contrôleur
     ↓
 Réponse
 ```
-
 ---
 
 ## 1. Contrôleur très simple
@@ -110,24 +109,6 @@ Résultat :
 ```text
 Patient : 12
 ```
-
----
-
-## Ce que fait Symfony
-
-Symfony transforme l'URL :
-
-```text
-/patient/12
-```
-
-en appel de méthode :
-
-```php
-show(12)
-```
-
-Le contrôleur reçoit donc directement la valeur.
 
 ---
 
@@ -260,66 +241,6 @@ Je transmets l'objet Patient à Twig.
 
 ---
 
-## Exemple inspiré de SoigneMoi
-
-Imaginons l'URL :
-
-```text
-/patient/25
-```
-
-Symfony suit ce chemin :
-
-```text
-/patient/25
-    ↓
-Route /patient/{id}
-    ↓
-id = 25
-    ↓
-PatientController::show(25)
-    ↓
-PatientRepository->find(25)
-    ↓
-patient/show.html.twig
-```
-
-Le contrôleur sert donc de pont entre :
-
-```text
-URL
- ↓
-Données
- ↓
-Vue Twig
-```
-
----
-
-## Ce que Symfony fait automatiquement
-
-Symfony :
-
-- trouve la route ;
-- appelle la bonne méthode ;
-- transmet les paramètres de route ;
-- fournit certains objets comme les repositories ;
-- transforme la réponse PHP en réponse HTTP.
-
----
-
-## Ce que le développeur écrit
-
-Le développeur écrit :
-
-- la méthode du contrôleur ;
-- les paramètres nécessaires ;
-- les appels aux repositories ;
-- le choix du template Twig ;
-- les variables transmises à Twig.
-
----
-
 ## À retenir
 
 Un contrôleur :
@@ -343,64 +264,6 @@ Twig
  ↓
 Réponse HTML
 ```
-
----
-
-## Erreurs fréquentes
-
-### Oublier le type Response
-
-Incorrect :
-
-```php
-public function accueil()
-```
-
-Correct :
-
-```php
-public function accueil(): Response
-```
-
----
-
-### Oublier le return
-
-Incorrect :
-
-```php
-public function accueil(): Response
-{
-    $this->render('accueil/index.html.twig');
-}
-```
-
-Correct :
-
-```php
-public function accueil(): Response
-{
-    return $this->render('accueil/index.html.twig');
-}
-```
-
----
-
-### Confondre variable PHP et variable Twig
-
-PHP :
-
-```php
-'patient' => $patient
-```
-
-Twig :
-
-```twig
-{{ patient.nom }}
-```
-
-La variable Twig s'appelle `patient`, pas `$patient`.
 
 ---
 

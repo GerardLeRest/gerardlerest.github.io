@@ -95,22 +95,6 @@ Résultat :
 
 ---
 
-## Ce que Symfony fait
-
-Symfony transforme :
-
-```text
-/sejour/15/2026
-```
-
-en :
-
-```php
-show(15, 2026)
-```
-
----
-
 ## 3. Paramètre texte
 
 ```php
@@ -194,57 +178,6 @@ Résultat :
 
 ---
 
-## Exemple inspiré de SoigneMoi
-
-```php
-#[Route('/patient/{id}', name: 'patient_show')]
-public function show(int $id)
-```
-
-URL :
-
-```text
-/patient/25
-```
-
-Symfony appelle :
-
-```php
-show(25)
-```
-
-Puis le contrôleur pourra demander :
-
-```php
-$patientRepository->find(25);
-```
-
-pour récupérer le patient.
-
----
-
-## Ce que Symfony fait automatiquement
-
-Symfony :
-
-- lit l'URL ;
-- détecte les paramètres ;
-- vérifie les contraintes ;
-- transmet les valeurs au contrôleur.
-
----
-
-## Ce que le développeur écrit
-
-Le développeur choisit :
-
-- le nom du paramètre ;
-- son type ;
-- les contraintes éventuelles ;
-- la logique métier.
-
----
-
 ## À retenir
 
 Les paramètres de route permettent :
@@ -261,44 +194,6 @@ URL
 Paramètre
  ↓
 Contrôleur
-```
-
----
-
-## Erreurs fréquentes
-
-### Nom différent
-
-Incorrect :
-
-```php
-#[Route('/patient/{id}')]
-
-public function show(int $numero)
-```
-
-Correct :
-
-```php
-#[Route('/patient/{id}')]
-
-public function show(int $id)
-```
-
----
-
-### Oublier les accolades
-
-Incorrect :
-
-```php
-'/patient/id'
-```
-
-Correct :
-
-```php
-'/patient/{id}'
 ```
 
 ---

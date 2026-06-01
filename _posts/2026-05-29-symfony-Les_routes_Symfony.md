@@ -153,62 +153,6 @@ Résultat :
 
 ---
 
-## Ce que Symfony fait automatiquement
-
-Symfony :
-
-- analyse l'URL ;
-- compare toutes les routes ;
-- trouve la bonne route ;
-- extrait les paramètres ;
-- appelle le contrôleur ;
-- transmet les paramètres à la méthode.
-
----
-
-## Ce que le développeur écrit
-
-Le développeur écrit :
-
-```php
-#[Route('/patient/{id}', name: 'patient_show')]
-```
-
-et :
-
-```php
-public function show(int $id)
-```
-
-Symfony s'occupe du reste.
-
----
-
-## Exemple inspiré de SoigneMoi
-
-Imaginons :
-
-```php
-#[Route('/patient/{id}', name: 'patient_show')]
-public function show(int $id)
-```
-
-L'utilisateur demande :
-
-```text
-/patient/25
-```
-
-Symfony exécute :
-
-```php
-show(25)
-```
-
-Le contrôleur peut alors récupérer le patient n°25 dans la base de données.
-
----
-
 ## À retenir
 
 Une route :
@@ -228,44 +172,6 @@ Route
 Contrôleur
  ↓
 Réponse
-```
-
----
-
-## Erreurs fréquentes
-
-### Oublier le caractère #
-
-Incorrect :
-
-```php
-[Route('/bonjour')]
-```
-
-Correct :
-
-```php
-#[Route('/bonjour')]
-```
-
-### Nom de paramètre différent
-
-Incorrect :
-
-```php
-#[Route('/patient/{id}')]
-
-public function show(int $numero)
-```
-
-Symfony ne trouve pas la correspondance.
-
-Correct :
-
-```php
-#[Route('/patient/{id}')]
-
-public function show(int $id)
 ```
 
 ---

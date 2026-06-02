@@ -36,10 +36,9 @@ tags: [symfony, apprentissage, parcours]
 
 ## Bloc 3 : Relations Doctrine
 
-17. Relation ManyToOne
-18. Relation OneToMany
-19. Relation ManyToMany
-20. Cascade persist et remove
+17. Les relations entre entités
+18. Relation ManyToMany
+19. Cascade persist et remove
 
 ---
 

@@ -6,7 +6,7 @@ categories: [Symfony, Cours]
 tags: [Symfony, Doctrine, Cascade]
 ---
 
-# Cours 20 — Cascade persist et remove
+# Cours 19 — Cascade persist et remove
 
 ## Introduction
 

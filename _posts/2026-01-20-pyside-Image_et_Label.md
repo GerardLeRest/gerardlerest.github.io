@@ -3,7 +3,7 @@ title: Image et Label
 author: Gérard LE REST
 date: 2026-01-20 04:47:00 +0800
 categories: [Pyside6, Python, Cours]
-tags: [Label, Image]
+tags: [label, image]
 ---
 
 # Comment insérer une image dans un QLabel

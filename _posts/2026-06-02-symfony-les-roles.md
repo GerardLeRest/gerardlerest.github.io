@@ -3,7 +3,7 @@ title: Symfony – Les rôles
 author: Gérard LE REST
 date: 2026-06-02 22:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Sécurité, Rôles]
+tags: [symfony, securite, roles]
 ---
 
 # Cours 27 — Les rôles

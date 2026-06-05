@@ -3,7 +3,7 @@ title: Symfony – Les tests
 author: Gérard LE REST
 date: 2026-06-03 13:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Tests, PHPUnit]
+tags: [symfony, tests, phpunit]
 ---
 
 # Cours 38 — Les tests

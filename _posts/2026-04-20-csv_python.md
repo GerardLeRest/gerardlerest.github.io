@@ -3,7 +3,7 @@ title: CSV et Python
 author: Gérard LE REST
 date: 2026-04-20 16:00:00 +0800
 categories: [CSV, Python, Cours]
-tags: [CSV, Python]
+tags: [csv, python]
 ---
 
 # 📄 CSV et Python – L’essentiel

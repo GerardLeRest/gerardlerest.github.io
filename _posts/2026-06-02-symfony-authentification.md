@@ -3,7 +3,7 @@ title: Symfony – Authentification
 author: Gérard LE REST
 date: 2026-06-02 20:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Sécurité, Authentification]
+tags: [symfony, securité, authentification]
 ---
 
 # Cours 24 — Authentification

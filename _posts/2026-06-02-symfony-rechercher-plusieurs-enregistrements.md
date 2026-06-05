@@ -3,7 +3,7 @@ title: Symfony – Rechercher plusieurs enregistrements
 author: Gérard LE REST
 date: 2026-06-02 15:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Repository]
+tags: [symfony, doctrine, repository]
 ---
 
 # Cours 13 — Rechercher plusieurs enregistrements
@@ -51,11 +51,13 @@ public function index(
 ## Afficher les résultats dans Twig
 
 {% raw %}
+
 ```twig
 {% for patient in patients %}
     {{ patient.nom }}
 {% endfor %}
 ```
+
 {% endraw %}
 
 ---

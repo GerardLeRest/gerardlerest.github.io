@@ -4,7 +4,7 @@ title: "Symfony - Créer une API REST"
 author: "Gérard LE REST"
 date: 2026-06-03 12:00:00 +0200
 categories: [Symfony, Cours]
-tags: [Symfony, API, REST, JSON]
+tags: [symfony, api, rest, json]
 ---
 ---
 

@@ -3,7 +3,7 @@ title: Symfony – Réponse JSON
 author: Gérard LE REST
 date: 2026-06-03 11:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, JSON, API]
+tags: [symfony, json, api]
 ---
 
 # Cours 35 — Réponse JSON

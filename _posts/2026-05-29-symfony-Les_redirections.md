@@ -3,7 +3,7 @@ title: Symfony – Les redirections
 author: Gérard LE REST
 date: 2026-05-29 18:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Redirection, Route]
+tags: [symfony, redirection, route]
 ---
 
 # Cours 5 — Les redirections

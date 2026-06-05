@@ -3,7 +3,7 @@ title: Symfony – Bonnes pratiques
 author: Gérard LE REST
 date: 2026-06-03 14:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Bonnes pratiques, Qualité]
+tags: [symfony, bonnes_pratiques, qualite]
 ---
 
 # Cours 41 — Bonnes pratiques

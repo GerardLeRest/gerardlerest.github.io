@@ -3,7 +3,7 @@ title: Symfony – Passer des variables à Twig
 author: Gérard LE REST
 date: 2026-06-02 12:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Twig, Variables]
+tags: [symfony, twig, variables]
 ---
 
 # Cours 7 — Passer des variables à Twig
@@ -15,7 +15,7 @@ Un contrôleur peut transmettre des données à une vue Twig.
 Ces données sont généralement affichées dans une page HTML.
 
 > **Note Jekyll**
->
+> 
 > Les exemples Twig de ce cours sont entourés par les balises Liquid `raw` et `endraw`
 > afin d'éviter que Jekyll interprète les expressions Twig.
 
@@ -34,9 +34,11 @@ return $this->render('accueil/index.html.twig', [
 Twig les affiche :
 
 {% raw %}
+
 ```twig
 {{ prenom }}
 ```
+
 {% endraw %}
 
 ---
@@ -58,9 +60,11 @@ public function bonjour(): Response
 Vue Twig :
 
 {% raw %}
+
 ```twig
 {{ prenom }}
 ```
+
 {% endraw %}
 
 Résultat :
@@ -85,9 +89,11 @@ return $this->render('patient/index.html.twig', [
 Vue Twig :
 
 {% raw %}
+
 ```twig
 {{ prenom }} {{ nom }}
 ```
+
 {% endraw %}
 
 Résultat :
@@ -111,9 +117,11 @@ return $this->render('patient/show.html.twig', [
 Vue Twig :
 
 {% raw %}
+
 ```twig
 {{ patient.nom }}
 ```
+
 {% endraw %}
 
 Résultat :
@@ -140,7 +148,9 @@ Exemple :
 ```
 
 {% raw %}
+
 ```twig
 {{ patient.nom }}
 ```
+
 {% endraw %}

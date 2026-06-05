@@ -3,7 +3,7 @@ title: PHP – Getters, Setters et Bases Réseau
 author: Gérard LE REST
 date: 2026-05-20 16:00:00 +0800
 categories: [PHP, Cours]
-tags: [PHP, Backend]
+tags: [php, backend]
 ---
 
 # Cours PHP — Getters, Setters et Bases Réseau

@@ -3,7 +3,7 @@ title: Symfony – Les Services
 author: Gérard LE REST
 date: 2026-06-03 09:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Service, Injection]
+tags: [symfony, service, injection]
 ---
 
 # Cours 30 — Les Services

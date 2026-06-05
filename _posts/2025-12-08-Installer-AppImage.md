@@ -3,7 +3,7 @@ title: Installer une Appimage
 author: Gérard LE REST
 date: 2025-12-08 20:00:00 +0800
 categories: [Linux, Tutoriel]
-tags: [AppImage]
+tags: [appimage]
 
 ---
 

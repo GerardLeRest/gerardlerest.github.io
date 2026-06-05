@@ -3,7 +3,7 @@ title: Symfony – Créer une entité
 author: Gérard LE REST
 date: 2026-06-02 12:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Entité]
+tags: [symfony, doctrine, entite]
 ---
 
 # Cours 9 — Créer une entité

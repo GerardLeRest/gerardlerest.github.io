@@ -3,7 +3,7 @@ title: Symfony – Validation des données
 author: Gérard LE REST
 date: 2026-06-02 20:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Validation, Formulaire]
+tags: [symfony, validation, formulaire]
 ---
 
 # Cours 23 — Validation des données

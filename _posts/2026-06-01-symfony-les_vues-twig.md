@@ -3,7 +3,7 @@ title: Symfony – Les vues Twig
 author: Gérard LE REST
 date: 2026-06-01 12:02:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Twig, Vue]
+tags: [symfony, twig, vue]
 ---
 
 # Cours 6 — Les vues Twig
@@ -17,7 +17,7 @@ Le contrôleur prépare les données puis les transmet à Twig qui se charge de 
 Twig évite de mélanger le code PHP et le code HTML.
 
 > **Note Jekyll**
->
+> 
 > Dans un site Jekyll, le moteur Liquid utilise aussi les accolades de Twig.
 > Pour afficher du code Twig dans un article, il faut entourer les blocs Twig avec les balises `raw` et `endraw` de Liquid.
 > Dans le texte du cours, on évite d'écrire directement les symboles Twig complets afin que Jekyll ne les interprète pas.
@@ -87,9 +87,11 @@ public function bonjour(): Response
 Vue Twig :
 
 {% raw %}
+
 ```twig
 <h1>Bonjour {{ prenom }}</h1>
 ```
+
 {% endraw %}
 
 Résultat :
@@ -114,9 +116,11 @@ return $this->render('patient/index.html.twig', [
 Vue Twig :
 
 {% raw %}
+
 ```twig
 <p>{{ prenom }} {{ nom }}</p>
 ```
+
 {% endraw %}
 
 ---
@@ -124,6 +128,7 @@ Vue Twig :
 ## Afficher une condition
 
 {% raw %}
+
 ```twig
 {% if age >= 18 %}
     <p>Adulte</p>
@@ -131,6 +136,7 @@ Vue Twig :
     <p>Mineur</p>
 {% endif %}
 ```
+
 {% endraw %}
 
 ---
@@ -138,11 +144,13 @@ Vue Twig :
 ## Afficher une boucle
 
 {% raw %}
+
 ```twig
 {% for patient in patients %}
     <p>{{ patient.nom }}</p>
 {% endfor %}
 ```
+
 {% endraw %}
 
 ---

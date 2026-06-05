@@ -3,7 +3,7 @@ title: Symfony – Les sessions
 author: Gérard LE REST
 date: 2026-06-03 10:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Session, Sécurité]
+tags: [symfony, session, securite]
 ---
 
 # Cours 33 — Les sessions

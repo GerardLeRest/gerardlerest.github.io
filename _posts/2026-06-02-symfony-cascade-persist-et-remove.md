@@ -3,7 +3,7 @@ title: Symfony – Cascade persist et remove
 author: Gérard LE REST
 date: 2026-06-02 18:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Cascade]
+tags: [symfony, doctrine, cascade]
 ---
 
 # Cours 19 — Cascade persist et remove

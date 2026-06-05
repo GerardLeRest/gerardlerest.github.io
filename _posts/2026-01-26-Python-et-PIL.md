@@ -3,7 +3,7 @@ title: Python et PIL (Pillow)
 author: Gérard LE REST
 date: 2026-01-26 17:53:00 +0800
 categories: [Python, Cours]
-tags: [Image, PIL]
+tags: [image, pil]
 ---
 
 # Python et PIL (Pillow)

@@ -3,7 +3,7 @@ title: Symfony – Hachage des mots de passe
 author: Gérard LE REST
 date: 2026-06-02 21:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Sécurité, Mot de passe]
+tags: [symfony, securite, Mot de passe]
 ---
 
 # Cours 26 — Hachage des mots de passe

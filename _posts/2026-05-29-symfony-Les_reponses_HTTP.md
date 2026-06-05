@@ -3,7 +3,7 @@ title: Symfony – Les réponses HTTP
 author: Gérard LE REST
 date: 2026-05-29 18:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Response, HTTP]
+tags: [symfony, response, http]
 ---
 
 # Cours 4 — Les réponses HTTP

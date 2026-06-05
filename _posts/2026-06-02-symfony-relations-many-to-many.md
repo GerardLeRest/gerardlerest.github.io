@@ -3,7 +3,7 @@ title: Symfony – Les relations ManyToMany
 author: Gérard LE REST
 date: 2026-06-02 17:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Relation]
+tags: [symfony, doctrine, relation]
 ---
 
 # Cours 18 — Les relations ManyToMany

@@ -3,7 +3,7 @@ title: Symfony – Paramètres de configuration
 author: Gérard LE REST
 date: 2026-06-03 10:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Configuration, Paramètres]
+tags: [symfony, configuration, parametres]
 ---
 
 # Cours 32 — Paramètres de configuration

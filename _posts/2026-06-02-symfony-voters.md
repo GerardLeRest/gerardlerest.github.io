@@ -3,7 +3,7 @@ title: Symfony – Les Voters
 author: Gérard LE REST
 date: 2026-06-02 23:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Sécurité, Voter]
+tags: [symfony, securite, voter]
 ---
 
 # Cours 29 — Les Voters

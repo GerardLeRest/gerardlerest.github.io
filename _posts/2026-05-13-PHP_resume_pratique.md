@@ -3,7 +3,7 @@ title: PHP – Résumé pratique
 author: Gérard LE REST
 date: 2026-05-13 11:30:00 +0800
 categories: [PHP, Cours]
-tags: [PHP, Backend]
+tags: [php, backend]
 ---
 
 # 📄 PHP – Résumé pratique (bases du langage)

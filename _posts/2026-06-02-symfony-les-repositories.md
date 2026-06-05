@@ -3,7 +3,7 @@ title: Symfony – Les repositories
 author: Gérard LE REST
 date: 2026-06-02 14:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Repository]
+tags: [symfony, doctrine, repository]
 ---
 
 # Cours 11 — Les repositories

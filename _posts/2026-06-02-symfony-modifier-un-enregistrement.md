@@ -3,7 +3,7 @@ title: Symfony – Modifier un enregistrement
 author: Gérard LE REST
 date: 2026-06-02 16:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, EntityManager]
+tags: [symfony, doctrine, entitymanager]
 ---
 
 # Cours 15 — Modifier un enregistrement

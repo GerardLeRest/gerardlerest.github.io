@@ -3,7 +3,7 @@ title: Symfony – Supprimer un enregistrement
 author: Gérard LE REST
 date: 2026-06-02 16:15:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, EntityManager]
+tags: [symfony, doctrine, entitymanager]
 ---
 
 # Cours 16 — Supprimer un enregistrement

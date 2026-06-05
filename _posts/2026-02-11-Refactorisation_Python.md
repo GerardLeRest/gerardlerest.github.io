@@ -3,7 +3,7 @@ title: Refactorisation Python
 author: Gérard LE REST
 date: 2026-02-11 10:44:00 +0800
 categories: [Python, Tutoriel]
-tags: [sanke_case, CamelCase, Constante]
+tags: [sanke_case, camelcase, constante]
 ---
 
 # 

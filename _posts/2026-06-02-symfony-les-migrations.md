@@ -3,7 +3,7 @@ title: Symfony – Les migrations
 author: Gérard LE REST
 date: 2026-06-02 13:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Migration]
+tags: [symfony, doctrine, migration]
 ---
 
 # Cours 10 — Les migrations

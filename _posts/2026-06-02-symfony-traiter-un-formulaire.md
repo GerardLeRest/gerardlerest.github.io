@@ -3,7 +3,7 @@ title: Symfony – Traiter un formulaire
 author: Gérard LE REST
 date: 2026-06-02 19:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Formulaire, Contrôleur]
+tags: [symfony, formulaire, controleur]
 ---
 
 # Cours 22 — Traiter un formulaire

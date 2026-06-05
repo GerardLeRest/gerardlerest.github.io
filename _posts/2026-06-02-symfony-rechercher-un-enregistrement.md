@@ -3,7 +3,7 @@ title: Symfony – Rechercher un enregistrement
 author: Gérard LE REST
 date: 2026-06-02 14:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Repository]
+tags: [symfony, doctrine, repository]
 ---
 
 # Cours 12 — Rechercher un enregistrement

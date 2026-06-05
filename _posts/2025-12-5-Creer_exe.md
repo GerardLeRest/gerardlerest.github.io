@@ -3,7 +3,7 @@ title: Installer un exe
 author: Gérard LE REST
 date: 2025-12-05 16:40:00 +0800
 categories: [Windows, Tutoriel]
-tags: [exe, PyInstaller, Inno Setup]
+tags: [exe, pyinstaller, inno setup]
 ---
 
 # 1. Constitution du dossier "PyCDCover-Windows"

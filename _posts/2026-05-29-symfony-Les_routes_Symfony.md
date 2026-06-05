@@ -3,7 +3,7 @@ title: Symfony – Les routes Symfony
 author: Gérard LE REST
 date: 2026-05-29 16:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Route, Contrôleur]
+tags: [symfony, route, controleur]
 ---
 
 # Cours 1 — Les routes Symfony

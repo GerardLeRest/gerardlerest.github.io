@@ -3,7 +3,7 @@ title: Symfony – Les liens dans Twig
 author: Gérard LE REST
 date: 2026-06-02 12:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Twig, Liens]
+tags: [symfony, twig, liens]
 ---
 
 # Cours 8 — Les liens dans Twig

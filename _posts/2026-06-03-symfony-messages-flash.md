@@ -3,7 +3,7 @@ title: Symfony – Les messages Flash
 author: Gérard LE REST
 date: 2026-06-03 11:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Flash, Session]
+tags: [symfony, flash, session]
 ---
 
 # Cours 34 — Les messages Flash

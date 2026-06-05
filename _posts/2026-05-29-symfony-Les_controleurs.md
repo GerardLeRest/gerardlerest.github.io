@@ -3,7 +3,7 @@ title: Symfony – Les contrôleurs
 author: Gérard LE REST
 date: 2026-05-29 17:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Contrôleur, Backend]
+tags: [symfony, controleur, backend]
 ---
 
 # Cours 3 — Les contrôleurs
@@ -39,6 +39,7 @@ Contrôleur
     ↓
 Réponse
 ```
+
 ---
 
 ## 1. Contrôleur très simple

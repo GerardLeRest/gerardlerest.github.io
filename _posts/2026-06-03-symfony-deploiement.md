@@ -3,7 +3,7 @@ title: Symfony – Déploiement
 author: Gérard LE REST
 date: 2026-06-03 13:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Déploiement, Production]
+tags: [symfony, deploiement, production]
 ---
 
 # Cours 39 — Déploiement

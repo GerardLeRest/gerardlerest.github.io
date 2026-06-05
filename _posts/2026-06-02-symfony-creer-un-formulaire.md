@@ -3,7 +3,7 @@ title: Symfony – Créer un formulaire
 author: Gérard LE REST
 date: 2026-06-02 18:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Formulaire, FormType]
+tags: [symfony, formulaire, formtype]
 ---
 
 # Cours 20 — Créer un formulaire

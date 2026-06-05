@@ -3,7 +3,7 @@ title: Symfony – L'entité User
 author: Gérard LE REST
 date: 2026-06-02 21:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, User, Sécurité]
+tags: [symfony, user, securite]
 ---
 
 # Cours 25 — L'entité User

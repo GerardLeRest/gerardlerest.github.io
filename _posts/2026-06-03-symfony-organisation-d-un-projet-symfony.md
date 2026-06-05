@@ -3,7 +3,7 @@ title: Symfony – Organisation d’un projet Symfony
 author: Gérard LE REST
 date: 2026-06-03 14:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Architecture, Organisation]
+tags: [symfony, architecture, organisation]
 ---
 
 # Cours 40 — Organisation d’un projet Symfony

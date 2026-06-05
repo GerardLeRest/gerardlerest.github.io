@@ -3,7 +3,7 @@ title: Symfony – Afficher un formulaire Twig
 author: Gérard LE REST
 date: 2026-06-02 19:00:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Twig, Formulaire]
+tags: [symfony, twig, formulaire]
 ---
 
 # Cours 21 — Afficher un formulaire Twig

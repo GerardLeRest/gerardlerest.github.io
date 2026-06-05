@@ -3,7 +3,7 @@ title: Symfony – Restriction d'accès
 author: Gérard LE REST
 date: 2026-06-02 22:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Sécurité, Accès]
+tags: [symfony, securite, acces]
 ---
 
 # Cours 28 — Restriction d'accès

@@ -3,7 +3,7 @@ title: Créer une fenêtre vide
 author: Gérard LE REST
 date: 2026-01-20 01:00:00 +0800
 categories: [Pyside6, Python, Cours]
-tags: [Fenêtre vide]
+tags: [fenetre vide]
 
 ---
 

@@ -3,7 +3,7 @@ title: Symfony – Les relations entre entités
 author: Gérard LE REST
 date: 2026-06-02 16:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, Doctrine, Relation]
+tags: [symfony, doctrine, relation]
 ---
 
 # Cours 17 — Les relations entre entités

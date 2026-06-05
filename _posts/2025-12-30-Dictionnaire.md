@@ -3,7 +3,7 @@ title: Les dictionnaires - Python
 author: Gérard LE REST
 date: 2025-12-28 18:49:00 +0800
 categories: [Python, Cours]
-tags: [dictionnaire, Json]
+tags: [dictionnaire, json]
 ---
 
 # 📘 PySide6 — Les menus avec QMenu (cours clair et structuré)

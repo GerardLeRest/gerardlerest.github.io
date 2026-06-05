@@ -3,7 +3,7 @@ title: Symfony – Consommer une API
 author: Gérard LE REST
 date: 2026-06-03 12:30:00 +0800
 categories: [Symfony, Cours]
-tags: [Symfony, API, HTTP Client]
+tags: [symfony, api, http-client]
 ---
 
 # Cours 37 — Consommer une API

@@ -1,9 +1,9 @@
 ---
-title: Liste des cours Symfony
+title: Symfony – Liste des cours
 author: Gérard LE REST
-date: 2026-05-29 12:00:00 +0100
+date: 2026-06-05 15:59:00 +0200
 categories: [Symfony, Cours]
-tags: [symfony, apprentissage, parcours]
+tags: [Symfony]
 ---
 
 # Liste des cours Symfony

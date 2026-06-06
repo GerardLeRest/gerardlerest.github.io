@@ -8,7 +8,7 @@ tags: [symfony]
 
 # Liste des cours Symfony
 
-## Bloc 1 : Les bases de Symfony
+## # Bloc 1 : Les bases de Symfony
 
 1. Les routes Symfony
 2. Les paramètres de route
@@ -21,7 +21,7 @@ tags: [symfony]
 
 ---
 
-## Bloc 2 : Doctrine
+# Bloc 2 : Doctrine
 
 9. Créer une entité
 10. Les migrations
@@ -34,7 +34,7 @@ tags: [symfony]
 
 ---
 
-## Bloc 3 : Relations Doctrine
+# Bloc 3 : Relations Doctrine
 
 17. Les relations entre entités
 18. Relation ManyToMany
@@ -42,50 +42,50 @@ tags: [symfony]
 
 ---
 
-## Bloc 4 : Formulaires
+# Bloc 4 : Formulaires
 
-21. Créer un formulaire
-22. Afficher un formulaire Twig
-23. Traiter un formulaire
-24. Validation des données
-
----
-
-## Bloc 5 : Sécurité
-
-25. Authentification
-26. Utilisateur (User)
-27. Hachage des mots de passe
-28. Rôles
-29. Restriction d'accès
-30. Voters
+20. Créer un formulaire
+21. Afficher un formulaire Twig
+22. Traiter un formulaire
+23. Validation des données
 
 ---
 
-## Bloc 6 : Symfony avancé
+# Bloc 5 : Sécurité
 
-31. Services
-32. Injection de dépendances
-33. Paramètres de configuration
-34. Sessions
-35. Messages Flash
-
----
-
-## Bloc 7 : API
-
-36. Réponse JSON
-37. Créer une API REST
-38. Consommer une API
+24. Authentification
+25. Utilisateur (User)
+26. Hachage des mots de passe
+27. Rôles
+28. Restriction d'accès
+29. Voters
 
 ---
 
-## Bloc 8 : Professionnalisation
+# Bloc 6 : Symfony avancé
 
-39. Tests
-40. Déploiement
-41. Organisation d'un projet Symfony
-42. Bonnes pratiques
+30. Services
+31. Injection de dépendances
+32. Paramètres de configuration
+33. Sessions
+34. Messages Flash
+
+---
+
+# Bloc 7 : API
+
+35. Réponse JSON
+36. Créer une API REST
+37. Consommer une API
+
+---
+
+# Bloc 8 : Professionnalisation
+
+38. Tests
+39. Déploiement
+40. Organisation d'un projet Symfony
+41. Bonnes pratiques
 
 ---
 

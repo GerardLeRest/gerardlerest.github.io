@@ -30,7 +30,9 @@ Il permet notamment de :
 ```php
 <?php
 
-echo "Bonjour";
+echo "Bonjour"; # préféré lorsqu'il intègre une variable
+# ou
+echo 'Bonjour'
 ```
 
 ---
@@ -40,7 +42,7 @@ echo "Bonjour";
 ```php
 <?php
 
-$nom = "Gérard";
+$nom = 'Gérard';
 $age = 56;
 
 echo $nom;
@@ -66,10 +68,11 @@ echo $nom;
 
 ```php
 <?php
+$nom = 'Gérard';
+echo 'Bonjour' . $nom; # texte fixe
+# OU
+echo "Bonjour $nom" # texte contenant une variable
 
-$nom = "Gérard";
-
-echo "Bonjour " . $nom;
 ```
 
 ---
@@ -83,11 +86,11 @@ $age = 18;
 
 if ($age >= 18) {
 
-    echo "Majeur";
+    echo 'Majeur';
 }
 else {
 
-    echo "Mineur";
+    echo 'Mineur';
 }
 ```
 
@@ -128,7 +131,7 @@ for ($i = 1; $i <= 5; $i++) {
 ```php
 <?php
 
-$couleurs = ["rouge", "vert", "bleu"];
+$couleurs = ['rouge', 'vert', 'bleu'];
 
 echo $couleurs[0];
 ```
@@ -140,9 +143,9 @@ echo $couleurs[0];
 ```php
 <?php
 
-$couleurs = ["rouge", "vert"];
+$couleurs = ['rouge', 'vert'];
 
-$couleurs[] = "bleu";
+$couleurs[] = 'bleu';
 
 print_r($couleurs);
 ```
@@ -154,7 +157,7 @@ print_r($couleurs);
 ```php
 <?php
 
-$couleurs = ["rouge", "vert", "bleu"];
+$couleurs = ['rouge', 'vert', 'bleu'];
 
 unset($couleurs[1]);
 
@@ -168,7 +171,7 @@ print_r($couleurs);
 ```php
 <?php
 
-$couleurs = ["rouge", "vert", "bleu"];
+$couleurs = ['rouge', 'vert', 'bleu'];
 
 echo count($couleurs);
 ```
@@ -182,11 +185,11 @@ echo count($couleurs);
 
 $personne = [
 
-    "nom" => "LE REST",
-    "prenom" => "Gérard"
+    'nom' => 'LE REST',
+    'prenom' => 'Gérard'
 ];
 
-echo $personne["nom"];
+echo $personne['nom'];
 ```
 
 ---
@@ -198,10 +201,10 @@ echo $personne["nom"];
 
 $personne = [
 
-    "nom" => "LE REST"
+    'nom' => 'LE REST'
 ];
 
-$personne["prenom"] = "Gérard";
+$personne['prenom'] = 'Gérard';
 
 print_r($personne);
 ```
@@ -215,10 +218,10 @@ print_r($personne);
 
 $personne = [
 
-    "nom" => "LE REST"
+    'nom' => 'LE REST'
 ];
 
-$personne["nom"] = "DUPONT";
+$personne['nom'] = 'DUPONT';
 
 print_r($personne);
 ```
@@ -232,11 +235,11 @@ print_r($personne);
 
 $personne = [
 
-    "nom" => "LE REST",
-    "prenom" => "Gérard"
+    'nom' => 'LE REST',
+    'prenom' => 'Gérard'
 ];
 
-unset($personne["prenom"]);
+unset($personne['prenom']);
 
 print_r($personne);
 ```
@@ -250,7 +253,7 @@ print_r($personne);
 ```php
 <?php
 
-$couleurs = ["rouge", "vert", "bleu"];
+$couleurs = ['rouge', 'vert', 'bleu'];
 
 foreach ($couleurs as $couleur) {
 
@@ -295,7 +298,7 @@ function addition(int $a, int $b): int {
 ```php
 <?php
 
-require "fonctions.php";
+require 'fonctions.php';
 ```
 
 ---
@@ -336,7 +339,7 @@ class Patient {
 ```php
 <?php
 
-$patient = new Patient("Dupont");
+$patient = new Patient('Dupont');
 
 echo $patient->nom;
 ```
@@ -352,7 +355,7 @@ class Patient {
 
     public function direBonjour(): void {
 
-        echo "Bonjour";
+        echo 'Bonjour';
     }
 }
 ```
@@ -388,7 +391,7 @@ class Patient extends Personne {
 }
 
 // Création d'un patient
-$patient = new Patient("Dupont");
+$patient = new Patient('Dupont');
 
 echo $patient->nom;
 ```
@@ -415,7 +418,7 @@ class Patient implements Affichable {
 
     public function afficher(): void {
 
-        echo "Patient";
+        echo 'Patient';
     }
 }
 ```

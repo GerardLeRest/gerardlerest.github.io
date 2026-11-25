@@ -15,4 +15,7 @@
 
 #sidebar .profile-wrapper {
     flex-shrink: 0;
+    height: auto;
+    min-height: max-content;
+}
 }

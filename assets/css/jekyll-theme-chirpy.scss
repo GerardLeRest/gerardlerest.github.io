@@ -9,12 +9,17 @@
 ';
 
 /* append your custom style below */
-#sidebar .profile-wrapper {
-    flex-shrink: 0;
+#sidebar {
+    display: flex;
+    flex-direction: column;
 }
 
 #sidebar .profile-wrapper {
     flex-shrink: 0;
     height: auto;
     min-height: max-content;
+}
+
+#sidebar nav {
+    flex-shrink: 0;
 }

@@ -32,4 +32,4 @@ Bonne visite, et n’hésitez pas à me contacter si vous souhaitez plus de dét
 ---
 
 ![ordinateur_portable](assets/img/home-ordinateur_portable.png)
-*Figure 1 – Légende de la photo*
+*Figure 1 – bureau*

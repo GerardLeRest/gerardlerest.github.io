@@ -8,10 +8,9 @@ permalink: /
 
 ## Bienvenue sur « Créations & codes »
 
-*Créations & codes* est un espace dédié à la présentation de projets informatiques réalisés avec passion et curiosité.
+*Créations & codes* est un espace dédié à la présentation de mes projets informatiques les plus récents.
 
-Chaque projet présenté ici est né d’un besoin concret, d’une idée originale ou d’un défi personnel.  
-Que ce soit pour apprendre, créer, partager ou résoudre un vrai problème, les outils numériques offrent un terrain d’exploration infini.
+Chaque projet présenté ici est souvent né d’un besoin concret.  
 
 Vous trouverez sur ce site des applications **web, mobiles ou bureautiques**, développées principalement en **Python, PHP / Symfony, Java** et bien d’autres technologies.
 
@@ -31,5 +30,6 @@ Si vous souhaitez en savoir plus sur moi ou sur le site, vous pouvez consulter l
 Bonne visite, et n’hésitez pas à me contacter si vous souhaitez plus de détails.
 
 ---
+
 ![ordinateur_portable](assets/img/home-ordinateur_portable.png)
 *Figure 1 – Légende de la photo*
